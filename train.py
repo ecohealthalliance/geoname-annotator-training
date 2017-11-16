@@ -47,7 +47,7 @@ def train_classifier(annotated_articles, prior_classifier=None):
                 for span, span_group in AnnoTier(geoname.spans)\
                     .group_spans_by_containing_span(article['sections_to_ignore'],
                                                     allow_partial_containment=True)]):
-                print "ignoring:", geoname['asciiname']
+                print "ignoring:", geoname['name']
                 continue
             feature_vectors.append(feature.values())
             geonameid = str(geoname['geonameid'])
@@ -83,8 +83,8 @@ for gold_file in gold_files:
         'ignore': 100,
         'geo': 1
     }
-    doc.tiers['tags'].filter_overlapping_spans(
-        lambda span: tag_values.get(span.tag_name, 0))
+    doc.tiers['tags'].optimal_span_set(
+        prefer=lambda span: tag_values.get(span.tag_name, 0))
     p['content'] = doc.text
     if 'geonameids' not in p:
         p['geonameids'] = set([

@@ -3,7 +3,7 @@ import glob
 import sys
 from process_resource_file import process_resource_file
 from epitator.annotator import AnnoDoc
-from epitator.geoname_annotator import GeonameAnnotator, location_contains
+from epitator.geoname_annotator import GeonameAnnotator, location_contains, GeonameRow
 from epitator.get_database_connection import get_database_connection
 from xml_tag_annotator import XMLTagAnnotator
 import geoname_classifier
@@ -52,8 +52,8 @@ def score_LocationExtraction():
             'ignore': 100,
             'geo': 1
         }
-        doc.tiers['tags'].filter_overlapping_spans(
-            lambda span: tag_values.get(span.tag_name, 0))
+        doc.tiers['tags'].optimal_span_set(
+            prefer=lambda span: tag_values.get(span.tag_name, 0))
         connection = get_database_connection()
         connection.row_factory = sqlite3.Row
         cursor = connection.cursor()
@@ -64,8 +64,11 @@ def score_LocationExtraction():
         FROM geonames
         WHERE geonameid IN
         (''' + ','.join('?' for x in geoname_ids) + ')', geoname_ids)
+        geoname_results = [GeonameRow(r) for r in geoname_results]
         geonames_by_id = {r['geonameid']: r for r in geoname_results}
-        assert(set(geoname_ids) - set(geonames_by_id.keys()) == set())
+        extra_geonames = set(geoname_ids) - set(geonames_by_id.keys())
+        if extra_geonames != set():
+            print "Warning! Extra annotated geonames were not found in sqlite3 database: ", extra_geonames
         def has_containment_relationship(a, b):
             if a['geonameid'] == b['geonameid']:
                 return True
