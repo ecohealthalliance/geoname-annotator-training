@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+from __future__ import absolute_import
+from __future__ import print_function
 import glob
 import sys
 from process_resource_file import process_resource_file
@@ -9,12 +11,6 @@ from xml_tag_annotator import XMLTagAnnotator
 import geoname_classifier
 import sqlite3
 
-def safe_print(u):
-    try:
-        s = repr(u).encode('utf8', 'ignore')
-    except UnicodeEncodeError as e:
-        s = e
-    print s
 
 def score_LocationExtraction():
 
@@ -40,12 +36,12 @@ def score_LocationExtraction():
         if gold_file.endswith('/Barcelona-History.txt.md'): continue
         processed = process_resource_file(gold_file)
 
-        print gold_file
+        print(gold_file)
 
-        doc = AnnoDoc(unicode(processed['content'], 'utf8', 'ignore'))
-        print "Annotating gold..."
+        doc = AnnoDoc(processed['content'])
+        print("Annotating gold...")
         doc.add_tier(gold_geotag_annotator)
-        print "Annotating geonames..."
+        print("Annotating geonames...")
         doc.add_tier(geoname_annotator)
         # Remove overlapping gold spans favoring the ignored ones and geospans
         tag_values = {
@@ -68,8 +64,10 @@ def score_LocationExtraction():
         geonames_by_id = {r['geonameid']: r for r in geoname_results}
         extra_geonames = set(geoname_ids) - set(geonames_by_id.keys())
         if extra_geonames != set():
-            print "Warning! Extra annotated geonames were not found in sqlite3 database: ", extra_geonames
+            print("Warning! Extra annotated geonames were not found in sqlite3 database: ", extra_geonames)
         def has_containment_relationship(a, b):
+            if b == None:
+                return False
             if a['geonameid'] == b['geonameid']:
                 return True
             return location_contains(a, b) > 0 or location_contains(b, a) > 0
@@ -80,28 +78,29 @@ def score_LocationExtraction():
             if any(gold_span.label == gn_span.geoname['geonameid'] for gn_span in gn_spans):
                 tps += 1
             else:
+                print(gold_span, gold_span.text)
+                print([span.metadata['geoname'] for span in gn_spans])
                 fns += 1
-        gold_in_spans = doc.tiers['geonames'].group_spans_by_containing_span(doc.tiers['tags'], allow_partial_containment=True)
+        gold_in_spans = doc.tiers['geonames'].group_spans_by_containing_span(
+            doc.tiers['tags'], allow_partial_containment=True)
         for gn_span, gold_spans in gold_in_spans:
             if any(gold_span.tag_name == 'ignore' for gold_span in gold_spans):
                 ignored += 1
                 continue
             if not any(has_containment_relationship(gn_span.geoname,
-                                                    geonames_by_id[gold_span.label])
+                                                    geonames_by_id.get(gold_span.label))
                        for gold_span in gold_spans):
                 fps += 1
-        print
-        print
-        print
+        print("\n" * 3)
 
-    print 'tps:', tps
-    print 'fns:', fns
-    print 'fps:', fps
-    print 'ignored:', ignored
+    print('tps:', tps)
+    print('fns:', fns)
+    print('fps:', fps)
+    print('ignored:', ignored)
 
 
 if __name__ == '__main__':
     import datetime
     start = datetime.datetime.now()
     score_LocationExtraction()
-    print "Finished in", datetime.datetime.now() - start
+    print("Finished in", datetime.datetime.now() - start)
