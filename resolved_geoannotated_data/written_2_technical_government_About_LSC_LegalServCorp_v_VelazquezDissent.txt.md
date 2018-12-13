@@ -104,7 +104,7 @@ directly restrict speech; subsidies do not. Subsidies, it is true,
 may indirectly abridge speech, but only if the funding scheme is
 &quot;&#x27;manipulated&#x27; to have a &#x27;coercive effect&#x27;&quot; on those who do not
 hold the subsidized position. National Endowment for Arts v.
-Finley, 524 U. S. 569, 587 (1998) (quoting Arkansas Writers&#x27;
+Finley, 524 U. S. 569, 587 (1998) (quoting <ignore  id='undefined'>Arkansas</ignore> Writers&#x27;
 Project, Inc. v. Ragland, 481 U. S. 221, 237 (1987) (SCALIA, J.,
 dissenting)). Proving unconstitutional coercion is difficult enough
 when the spending program has universal coverage and excludes only
@@ -214,7 +214,7 @@ ante, at 9 (it surely is not), but rather that the spending program
 itself had been created &quot;to encourage a diversity of views from
 private speakers,&quot; 515
 U. S., at 834. What could not be distorted was the public forum
-that the spending program had created. As for Arkansas Ed.
+that the spending program had created. As for <ignore  id='undefined'>Arkansas</ignore> Ed.
 Television Comm&#x27;n v. Forbes, 523 U. S. 666 (1998), that case
 discussed the nature of television broadcasting, not to determine
 whether government regulation would alter its &quot;usual functioning&quot;
@@ -272,8 +272,8 @@ First Amendment.
 Nor will the judicial opinions produced by LSC cases
 systematically distort the interpretation of welfare laws. Judicial
 decisions do not stand as binding &quot;precedent&quot; for points that were
-not raised, not argued, and hence not analyzed. See, e.g., United
-States v. Verdugo-Urquidez, 494
+not raised, not argued, and hence not analyzed. See, e.g., <geo  id='6252001'>United
+States</geo> v. Verdugo-Urquidez, 494
 
 U. S. 259, 272 (1990); Hagans v. Lavine, 415 U. S. 528,
 533,
@@ -325,7 +325,7 @@ impossible to see how this difference from Rust has any bearing
 upon the First Amendment question, which, to repeat, is whether the
 funding scheme is &quot;&#x27;manipulated&#x27; to have a &#x27;coercive effect&#x27;&quot; on
 those who do not hold the subsidized position. National Endowment
-for Arts v. Finley, 524 U. S., at 587 (quoting <geo  id='4099753'>Arkansas</geo> Writers&#x27;
+for Arts v. Finley, 524 U. S., at 587 (quoting <ignore  id='undefined'>Arkansas</ignore> Writers&#x27;
 Project, Inc. v. Ragland, 481 U. S., at 237 (SCALIA, J.,
 dissenting)). It could be claimed to have such an effect if the
 client in a case ineligible for LSC representation could eliminate
@@ -354,7 +354,7 @@ the statute concocted by the Court of Appeals bears little
 resemblance to what Congress enacted, funding without restriction
 welfare-benefits litigation that Congress funded only under the
 limitations of §504(a)(16). Although no party briefed severability
-in Denver Area Ed. Telecommunications Consortium, Inc. v. FCC, 518
+in <ignore  id='undefined'>Denver</ignore> Area Ed. Telecommunications Consortium, Inc. v. FCC, 518
 U. S. 727 (1996), the Justices finding partial unconstitutionality
 considered it necessary to address the issue. Id., at 767
 (plurality opinion) (&quot;[W]e must ask whether §10(a) is severable&quot;);
@@ -386,7 +386,7 @@ legislature intended them as a whole, and that, if all could not be
 carried into effect, the legislature would not pass the residue
 independently, and some parts are unconstitutional, all the
 provisions which as thus dependent, conditional or connected, must
-fall with them.&quot; Warren v. Mayor and Aldermen of Charlestown, 68
+fall with them.&quot; Warren v. Mayor and Aldermen of <ignore  id='undefined'>Charlestown</ignore>, 68
 Mass. 84, 99 (1854).
 It is clear to me that the LSC Act&#x27;s funding of welfare benefits
 suits and its prohibition on suits challenging or defending the

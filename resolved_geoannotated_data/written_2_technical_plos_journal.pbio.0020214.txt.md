@@ -63,9 +63,9 @@ International collaboration and research grants are a major source of support fo
 active research groups (Table 1). Several agencies and foundations have programs for
 <geo  id='7729884'>Eastern Europe</geo>, <geo  id='2017370'>Russia</geo>, and/or former Soviet republics. Some of them, such as the Howard
 Hughes Medical Institute (<geo  id='4351335'>Chevy Chase, Maryland, United States</geo>), fund individual groups;
-others—for example the International Science and Technology Center (<geo  id='524901'><geo  id='524901'>Moscow</geo></geo><geo  id='524901'>,
+others—for example the International Science and Technology Center (<geo  id='524894'>Moscow,
 Russia</geo>)—stipulate that projects should be submitted jointly by academic and military
-researchers; and some agencies—in particular, <ignore  id='undefined'>European INTAS</ignore> (<geo  id='2800866'><geo  id='3337389'>Brussels</geo></geo><geo  id='3337389'>, Belgium</geo>) and the
+researchers; and some agencies—in particular, <ignore  id='undefined'>European INTAS</ignore> (<geo  id='3337389'>Brussels, Belgium</geo>) and the
 <ignore  id='undefined'>American John E. Fogarty International Center</ignore> (<geo  id='4348599'>Bethesda, Maryland, United States</geo>)—support
 collaboration between Russian and Western laboratories.
 Another source of financial support is direct collaboration between Western and Russian
@@ -172,14 +172,14 @@ especially if there are few restrictions on spending; even the most carefully co
 procedure cannot foresee all possible situations. But even more useful is the creation of
 joint research centers, such as the one opened by the international <ignore  id='undefined'>Ludwig Institute for
 Cancer Research</ignore> (LICR) based jointly in <geo  id='7287650'>Zurich</geo>, <geo  id='5128638'>New York</geo>, and <geo  id='2643744'>London</geo>, and the <ignore  id='undefined'>Belozersky
-Institute of Physico-Chemical Biology</ignore> of <ignore  id='undefined'>Moscow</ignore> State University in <geo  id='524901'><geo  id='524901'>Moscow</geo></geo><geo  id='524901'>, Russia</geo>. This
+Institute of Physico-Chemical Biology</ignore> of <ignore  id='undefined'>Moscow</ignore> State University in <geo  id='524901'>Moscow</geo>, Russia. This
 research center began with limited support for several stronger groups, and is gradually
 moving toward integration of a research program in <geo  id='524901'>Moscow</geo> with other LICR projects, and
 real collaboration between <geo  id='524901'>Moscow</geo> groups and LICR labs elsewhere.
 One of the most essential elements of successful research is access to up-to-date
 information. Consequently, any initiative that provides open access to scientific
 literature and databases is extremely useful. Seminars, lecture courses (such as the <ignore  id='undefined'>Moscow
-University</ignore> [<geo  id='524901'>Moscow, </geo><geo  id='524901'><geo  id='2017370'>Russia</geo></geo>] cycle on oncology and immunology sponsored by LICR;
+University</ignore> [<geo  id='524901'>Moscow, Russia</geo>] cycle on oncology and immunology sponsored by LICR;
 www.oncoimmunology.ru/index_e.htm), and the participation of Western scientists in
 scientific conferences in <geo  id='2017370'>Russia</geo> are important not only because they provide a fresh
 understanding of emerging trends, but also because they create personal contacts between

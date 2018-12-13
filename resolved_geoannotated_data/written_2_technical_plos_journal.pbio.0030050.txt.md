@@ -81,7 +81,7 @@ drain on our bodies. Indeed, some people argue that, because the brain is one of
 metabolically expensive tissues in our body, our brains could only have expanded in
 response to an improved diet. Another cost that goes along with a big brain is the need to
 reorganise its wiring. “As brain size increases, several problems are created”, explains
-systems neurobiologist Jon Kaas (<geo  id='4664532'>Vanderbilt University</geo>, <geo  id='4644585'>Nashville, Tennessee</geo>, <geo  id='6252001'>United
+systems neurobiologist Jon Kaas (<geo  id='4664532'>Vanderbilt University</geo>, <geo  id='4644585'>Nashville, Tennessee, United
 States</geo>). “The most serious is the increased time it takes to get information from one place
 to another.” One solution is to make the axons of the neurons bigger but this increases
 brain size again and the problem escalates. Another solution is to do things locally: only

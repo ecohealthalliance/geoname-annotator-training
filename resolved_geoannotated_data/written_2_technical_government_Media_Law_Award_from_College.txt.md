@@ -28,10 +28,10 @@ Recently, Wallace received the Outstanding Woman Lawyer in
 Public Interest Law Award. The award was voted on and presented by
 the women&#x27;s caucus of <ignore  id='undefined'>West Virginia University</ignore> College of Law.
 Wallace, 38, called <geo  id='4467732'>Gastonia</geo> home from the age of 8 until she
-graduated from Hunter Huss High School in 1983. Her parents, Carter
+graduated from <ignore  id='undefined'>Hunter Huss High School</ignore> in 1983. Her parents, Carter
 Bond, 66, and Carol Bond, 59, are still residents of <geo  id='4467732'>Gastonia</geo>.
-From Hunter Huss, she moved on to pursue a degree at Pfeiffer
-University in Misenheimer.
+From <ignore  id='undefined'>Hunter Huss</ignore>, she moved on to pursue a degree at <ignore  id='undefined'>Pfeiffer
+University</ignore> in <geo  id='4479779'>Misenheimer</geo>.
 After graduation from Pfeiffer in 1987 with a bachelor&#x27;s degree
 in both biology and psychology, she worked as legal secretary for
 attorney Louis A. Bledsoe Jr. for a year and a half.
@@ -39,18 +39,18 @@ attorney Louis A. Bledsoe Jr. for a year and a half.
 &quot;That was when I decided to go into the practice of law.&quot;
 She received her law degree at the <geo  id='4134519'>University of Arkansas</geo> in
 1992 and began her legal career in Public Defender Corp. in
-<geo  id='4819079'>Princeton</geo>. She also taught criminal justice classes at Bluefield
-College in <ignore  id='undefined'>West Virginia</ignore>.
-Wallace lives in Athens, W. Va., with her husband Rob, 37, and
+<geo  id='4819079'>Princeton</geo>. She also taught criminal justice classes at <geo  id='4799634'>Bluefield
+College</geo> in <geo  id='4826850'>West Virginia</geo>.
+Wallace lives in <geo  id='4797549'>Athens, W. Va.</geo>, with her husband Rob, 37, and
 her daughters Rachel, 11, and Claire, 5.
 Working in <geo  id='4819079'>Princeton</geo> at Legal Aid of <ignore  id='undefined'>West Virginia</ignore>, she is also
-a Junior Girl Scout leader in Athens, on the board of Advisors for
-Children&#x27;s Home Society and on several committees for Concord
-United Methodist Church.
+a Junior Girl Scout leader in <geo  id='4797549'>Athens</geo>, on the board of Advisors for
+Children&#x27;s Home Society and on several committees for <ignore  id='undefined'>Concord
+United Methodist Church</ignore>.
 Legal Aid of <ignore  id='undefined'>West Virginia</ignore> provides civil legal services and
 advocacy to residents of <geo  id='4826850'>West Virginia</geo>. The organization is the
-result of a merger between Appalachian Legal Services and the West
-Virginia Legal Services Plan.
+result of a merger between Appalachian Legal Services and the <ignore  id='undefined'>West
+Virginia</ignore> Legal Services Plan.
 Wallace worked with Joyce McConnell, associate dean for academic
 affairs at <ignore  id='undefined'>West Virginia University</ignore> College of Law, to set up a
 Kellogg Grant internship for law students of WVU in 1990.

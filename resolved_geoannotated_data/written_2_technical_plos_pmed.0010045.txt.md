@@ -65,9 +65,9 @@ following apheresis and elutriation. Greater than 90% of these monocytes express
 and HLA-DR. Cells were plated in 24-well plates at a density of 10
 6 cells per well, allowed to adhere for 4 h, then washed with
 Dulbecco&#x27;s Modified Eagles Medium and further cultured in 10% FBS in Dulbecco&#x27;s Modified
-Eagles Medium supplemented with 5 ng/ml GM-CSF (Sigma, <geo  id='4407066'><geo  id='6955119'>St. Louis, Missouri</geo></geo><geo  id='6955119'>, United
+Eagles Medium supplemented with 5 ng/ml GM-CSF (Sigma, <geo  id='6955119'>St. Louis, Missouri, United
 States</geo>) to promote macrophage differentiation. All experiments were performed after
-overnight equilibration with macrophage serum-free medium (GIBCO, <geo  id='5391811'><geo  id='5391811'>San Diego</geo></geo><geo  id='5391811'>, California,
+overnight equilibration with macrophage serum-free medium (GIBCO, <geo  id='5391811'>San Diego, California,
 United States</geo>; Invitrogen, <geo  id='5334223'><geo  id='5334223'>Carlsbad</geo></geo><geo  id='5334223'>, California, United States</geo>) supplemented with 5 ng/ml
 GM-CSF. Cells were treated with LPS (Sigma), aspirin (Sigma), SN50, and/or control
 peptide (Biomol, <geo  id='5206666'><geo  id='5206666'>Plymouth Meeting</geo></geo><geo  id='5206666'>, Pennsylvania, United States</geo>), MG132, PD98059, SB20358

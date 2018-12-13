@@ -102,7 +102,7 @@ The population density (people per square kilometer) of the five
 least densely populated states in the continental
 <geo  id='6252001'>U.S.</geo> are <geo  id='5843591'>Wyoming</geo> 1.8, <geo  id='5667009'>Montana</geo> 2.1, <geo  id='5769223'>South Dakota</geo> 3.5, North
 Dakota 3.6 and <geo  id='5509151'>Nevada</geo> 4.2. The population density of the two least
-populated departments of <geo  id='3017382'>France</geo>, Creuse and Lozère, is 14 persons
+populated departments of <geo  id='3017382'>France</geo>, <geo  id='3022516'>Creuse</geo> and <geo  id='2997288'>Lozère</geo>, is 14 persons
 per square kilometer.
 Table 1: Comparison of Mode of Delivery by Route in <geo  id='3017382'>France</geo> and
 the <geo  id='6252001'>U.S.</geo>

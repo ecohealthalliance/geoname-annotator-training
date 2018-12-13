@@ -6,7 +6,6 @@ The classifier is outputted as a self-contained python script.
 from __future__ import absolute_import
 from __future__ import print_function
 import glob
-import sys
 from process_resource_file import process_resource_file
 from epitator.annotator import AnnoDoc, AnnoTier
 from epitator.geoname_annotator import GeonameAnnotator, GeonameFeatures
@@ -15,7 +14,6 @@ from sklearn.linear_model import LogisticRegression
 import numpy as np
 import sklearn
 import logging
-import json
 import pprint
 
 logging.getLogger('annotator.geoname_annotator').setLevel(logging.ERROR)
@@ -23,13 +21,15 @@ logging.getLogger('annotator.geoname_annotator').setLevel(logging.ERROR)
 geoname_annotator = GeonameAnnotator()
 
 HIGH_CONFIDENCE_THRESHOLD = 0.5
-GEONAME_SCORE_THRESHOLD = 0.1
+GEONAME_SCORE_THRESHOLD = 0.15
+
 
 def train_classifier(annotated_articles, prior_classifier=None):
     """
     Train a classifier using the given set of annotated articles.
     """
     labels = []
+    weights = []
     feature_vectors = []
     for article in annotated_articles:
         gold_locations = set(map(str, article.get('geonameids')))
@@ -37,11 +37,9 @@ def train_classifier(annotated_articles, prior_classifier=None):
         candidates = geoname_annotator.get_candidate_geonames(doc)
         gn_features = geoname_annotator.extract_features(candidates, doc)
         if prior_classifier:
-            scores = prior_classifier.predict_proba([f.values() for f in gn_features])
-            for location, feature, score in zip(candidates, gn_features, scores):
-                location.high_confidence = float(score[1]) > HIGH_CONFIDENCE_THRESHOLD
-                feature.set_value('high_confidence', location.high_confidence)
-            geoname_annotator.add_contextual_features(gn_features)
+            geoname_annotator.add_contextual_features(
+                candidates, gn_features,
+                prior_classifier.predict_proba, HIGH_CONFIDENCE_THRESHOLD)
         used_gold_locations = set()
         for geoname, feature in zip(candidates, gn_features):
             if all([
@@ -52,6 +50,7 @@ def train_classifier(annotated_articles, prior_classifier=None):
                 print("ignoring:", geoname['name'])
                 continue
             feature_vectors.append(feature.values())
+            weights.append(len(geoname.spans))
             geonameid = str(geoname['geonameid'])
             if geonameid in gold_locations:
                 used_gold_locations |= set([geonameid])
@@ -62,11 +61,12 @@ def train_classifier(annotated_articles, prior_classifier=None):
     # L1 regularization helps with overfitting by constraining the model
     # to use fewer variables.
     clf = LogisticRegression(penalty='l1')
-    clf.fit(feature_vectors, labels)
+    clf.fit(feature_vectors, labels, weights)
+    #cv_results = cross_validate(clf, feature_vectors, labels, cv=4, scoring=('f1',), return_estimator=True)
     predictions = clf.predict_proba(feature_vectors)
     print(sklearn.metrics.precision_recall_fscore_support(
             np.array(labels),
-            predictions[:,1] > 0.5,
+            predictions[:, 1] > 0.5,
             average='micro'))
     clf.feature_names = GeonameFeatures.feature_names
     return clf
@@ -97,7 +97,7 @@ for gold_file in gold_files:
         span for span in doc.tiers['tags'].spans
         if span.tag_name == 'ignore'])
     annotated_articles.append(p)
-    
+
 
 # First a high base classifier is trained to identify high confidence geonames.
 # Next, a classifier that uses contextual features from the high confidence geonames
@@ -108,6 +108,7 @@ contextual_classifier = train_classifier(annotated_articles, base_classifier)
 # Print out a python program with a stand-alone version of the trained classifier.
 # The problem with pickling it is that it will create a dependency on specific
 # scikit-learn versions.
+
 
 def pprint_clf(clf):
     """

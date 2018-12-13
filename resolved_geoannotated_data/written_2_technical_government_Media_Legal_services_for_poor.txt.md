@@ -66,7 +66,7 @@ cuts because other large states had significant increases in
 poverty and will drain additional federal money from the Legal
 Services fund, Hamon said.
 An amendment to a Senate appropriations bill offered by Sen. Tom
-Harkin, D-Iowa, that would increase federal Legal Aid funding is
+Harkin, D-<ignore  id='undefined'>Iowa</ignore>, that would increase federal Legal Aid funding is
 pending, but its passage is uncertain, Bricking said.
 Legal Aid officials are particularly worried about impoverished
 areas of the state, such as eastern <ignore  id='undefined'>Kentucky</ignore>, served by the
@@ -83,6 +83,6 @@ estimate on its cuts.
 Next year, <geo  id='6254925'>Kentucky</geo> will lose almost $500,000 in grants through
 the federal Violence Against Women Act used to provide legal
 assistance to poor women who are victims of domestic violence. The
-U.S. Justice Department declined to renew those grants under new
+<ignore  id='undefined'>U.S.</ignore> Justice Department declined to renew those grants under new
 policies that direct the money to start-up programs instead of
 funding existing programs, Hamon said.

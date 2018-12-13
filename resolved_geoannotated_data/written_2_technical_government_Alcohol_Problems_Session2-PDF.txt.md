@@ -510,7 +510,7 @@ validation of a new alcohol screening instrument. Am J Psychiatry
 26. Pokorny A, Miller B, Kaplan H. The Brief MAST: a shortened
 version of the <ignore  id='undefined'>Michigan</ignore> Alcoholism Screening Test. Am J Psychiatry
 1972;129:342-8.
-27. Selzer M. The Michigan Alcoholism Screening Test: the quest
+27. Selzer M. The <ignore  id='undefined'>Michigan</ignore> Alcoholism Screening Test: the quest
 for a new diagnostic instrument. Am J Psychiatry
 1971;127:1653-8.
 28. Selzer M, Vinokur A, van Rooijen M. A self-administered

@@ -16,7 +16,7 @@ disease, was not effective at reducing natural infection rates in semi-immune Af
 adults, according to the report of a randomized controlled trial published this month in 
 PLoS Medicine . “This first field efficacy trial was an important
 milestone in the progression of new recombinant vectored vaccines to deployable products,”
-says Adrian Hill (University of <ignore  id='undefined'>Oxford, </ignore><ignore  id='undefined'><geo  id='2635167'>United Kingdom</geo></ignore>), the lead investigator of the
+says Adrian Hill (<geo  id='11524648'>University of Oxford, United Kingdom</geo>), the lead investigator of the
 study. “The safety profile was excellent and the efficacy data provide a first indication
 of the levels of cellular immunogenicity that will be required for preventing infection,”
 he says.

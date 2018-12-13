@@ -21,7 +21,7 @@ Whether castigating them on the silver screen, between the lines
 of pulpy, true-crime narratives, or in the jokes told around the
 proverbial water cooler, attorneys have been on the receiving end
 of many a hackneyed punch line.
-One <geo  id='5209006'>Roseburg</geo> attorney is doing her best to refute the cultural
+One <ignore  id='undefined'>Roseburg</ignore> attorney is doing her best to refute the cultural
 stereotype, however. Legal Aid attorney Sharon Lee Schwartz knew
 when she entered law school at <geo  id='4138892'>Georgetown University</geo> that she
 wanted to use her training to help others.
@@ -39,14 +39,14 @@ sort of call it my peace studies program -- any author that I think
 has ideas (as to) how people can live together without killing each
 other, that&#x27;s what I like to read.&quot;
 Schwartz replaced former Legal Aid attorney Lori Rubenstein at
-the <geo  id='5209006'>Roseburg</geo> office in 1996, although she initially interviewed for
+the <ignore  id='undefined'>Roseburg</ignore> office in 1996, although she initially interviewed for
 the position in 1994. During that two-year interim, she worked for
 Legal Aid on a reservation in <geo  id='5769223'>South Dakota</geo> practicing family,
 tribal and housing law. Legal Aid is a nonprofit national
 organization aimed at providing low-cost or free legal aid to those
 who need it.
 A <geo  id='5769223'>South Dakota</geo> blizzard six years ago prompted her to call the
-Roseburg office, which, coincidentally, was in the process of
+<ignore  id='undefined'>Roseburg</ignore> office, which, coincidentally, was in the process of
 trying to find her to fill the vacancy left by Rubenstein&#x27;s
 departure.
 Schwartz said her job keeps her involved in the community -- and

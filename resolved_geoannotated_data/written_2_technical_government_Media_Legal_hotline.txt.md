@@ -27,7 +27,7 @@ reach some of the judges.
 The hotline, which is part of Legal Services of Northern
 <geo  id='5332921'>California</geo>, was the only <geo  id='5332921'>California</geo> application from 24 submitted
 nationwide for $1.5 million in grants. &quot;It was because of a
-screw-up in <geo  id='5815135'><geo  id='4140963'>Washington</geo></geo> that <geo  id='5332921'>California</geo> is losing having a program
+screw-up in <geo  id='4140963'>Washington</geo> that <geo  id='5332921'>California</geo> is losing having a program
 like this,&quot; said Mandel. &quot;Other states got it instead.&quot;
 Kay Loughrey, a program information specialist with the aging
 administration, said grant applications were ranked a second time

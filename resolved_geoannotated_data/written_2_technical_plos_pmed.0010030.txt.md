@@ -21,7 +21,7 @@ type of cholesterol), the overall lipid profile is better with nevirapine than w
 efavirenz.
 “These data suggest that nevirapine may be preferable to efavirenz in HIV-infected
 adults with other cardiovascular risk factors,” says the study&#x27;s academic editor, Andrew
-Carr of St. Vincent&#x27;s Hospital in <geo  id='2169378'>Darlinghurst, Australia</geo>. “However, perceived
+Carr of <ignore  id='undefined'>St. Vincent&#x27;s Hospital</ignore> in <geo  id='2169378'>Darlinghurst, Australia</geo>. “However, perceived
 cardiovascular risk is only one factor that would affect the choice between these two
 drugs.”
 Van Leth and colleagues prospectively analyzed the lipids of patients enrolled in the

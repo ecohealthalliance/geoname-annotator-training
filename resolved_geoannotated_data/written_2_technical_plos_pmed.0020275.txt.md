@@ -52,7 +52,7 @@ respondents in these age groups in previous studies made it impossible to test t
 hypothesis. The CFAS, however, found no evidence of any such tailing off in incidence,
 which also has implications for policy and planning.
 The CFAS is important because it provides the first multi-site comparison of incidence
-rates in ethnically homogeneous populations within a country, and within Europe, using
+rates in ethnically homogeneous populations within a country, and within <geo  id='6255148'>Europe</geo>, using
 identical methodology across sites. The methodological approach developed for the study
 will also be of value for researchers undertaking other studies of dementia incidence, and
 in other chronic disease studies involving a two-phase selection process.

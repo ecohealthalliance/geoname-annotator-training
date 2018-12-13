@@ -124,7 +124,7 @@ documentation requirements.
 It should be kept in mind that the issue is largely one of
 grantee compliance with technical and administrative guidance on
 how and when to report certain activities. In no instance has LSC,
-its Inspector General, or the General Accounting Office identified
+its Inspector General, or the <ignore  id='undefined'>General Accounting Office</ignore> identified
 any fraud or intentional misrepresentation by any of the grantees
 in their compilation and reporting of this data. LSC will
 aggressively take steps to correct problems associated with the CSR
@@ -162,7 +162,7 @@ later than April 30, 2000.&quot; Departments of Commerce, Justice, and
 State, the Judiciary, and Related Agencies Appropriations Act of
 2000, Pub. L. No. 106-113, 112 Stat. 1501.
 3 Twenty-five years ago, our government made a pledge to help
-ensure that all persons have access to America&#x27;s civil justice
+ensure that all persons have access to <geo  id='6252001'>America</geo>&#x27;s civil justice
 system by enacting legislation that created Legal Services
 Corporation. Over the past quarter century, LSC has helped millions
 of low-income citizens solve important, sometimes life-threatening,
@@ -214,7 +214,7 @@ brief advice systems, through pro se clinics and projects, and
 through stand-alone kiosks. An attorney representing a client
 before judge and jury was no longer the norm of a &quot;case&quot; when
 delivering critical legal services to low-income individuals.
-The audits conducted by the <geo  id='4138846'>General Accounting Office</geo> (GAO) and
+The audits conducted by the <ignore  id='undefined'>General Accounting Office</ignore> (GAO) and
 reported in June 1999, confirmed the Inspector General&#x27;s findings
 as to the factors causing systemic errors in grantee case
 reporting. 4 The GAO visited five large programs: <ignore  id='undefined'>Puerto Rico</ignore> Legal
@@ -449,8 +449,8 @@ received from LSC: <geo  id='4829764'>Alabama</geo>, 91%; <geo  id='4099753'>Ark
 A Guide to Legal Services Planning. January 1999. American Bar
 Association: National Legal Aid &amp; Defender Association.
 10 <geo  id='5551752'>Arizona</geo>, <geo  id='4862182'>Iowa</geo>, <geo  id='5596512'>Idaho</geo>, <geo  id='4896861'>Illinois</geo>, <geo  id='4921868'>Indiana</geo>, <geo  id='6254925'>Kentucky</geo>, <geo  id='4331987'>Louisiana</geo>,
-<geo  id='5667009'>Montana</geo>, <geo  id='4482348'>North Carolina</geo>, <geo  id='5690763'>North Dakota</geo>, <geo  id='5073708'>Nebraska</geo>, <geo  id='4544379'>Oklahoma</geo>, South
-Carolina, <geo  id='4736286'>Texas</geo>, <geo  id='5279468'>Wisconsin</geo>, and <geo  id='4826850'>West Virginia</geo>. The SPAN Update: A
+<geo  id='5667009'>Montana</geo>, <geo  id='4482348'>North Carolina</geo>, <geo  id='5690763'>North Dakota</geo>, <geo  id='5073708'>Nebraska</geo>, <geo  id='4544379'>Oklahoma</geo>, <geo  id='4597040'>South
+Carolina</geo>, <geo  id='4736286'>Texas</geo>, <geo  id='5279468'>Wisconsin</geo>, and <geo  id='4826850'>West Virginia</geo>. The SPAN Update: A
 Guide to Legal Services Planning. January 1999. American Bar
 Association: National Legal Aid &amp; Defender Association.
 
@@ -614,7 +614,7 @@ poverty level.11 Some 10 million additional individuals with
 incomes between 100 and 125 percent of the poverty level are also
 potentially eligible for legal services. This means that almost one
 out of every five Americans is eligible for legal services
-assistance. America&#x27;s children are particularly affected by
+assistance. <geo  id='6252001'>America</geo>&#x27;s children are particularly affected by
 poverty. Even though the poverty rate has slightly declined, 18.9
 percent of children are still poor.12 In order to ensure these
 Americans are not left out of the justice system, a strong federal
@@ -624,11 +624,11 @@ approximately 80 percent of poor Americans do not have the
 advantage of an attorney when they are faced with serious situation
 where a lawyer&#x27;s advice and assistance would make a difference.
 Similar conclusions have been reached by state legal needs&#x27; studies
-in a dozen states including <geo  id='4155751'>Florida</geo>, <geo  id='614540'>Georgia</geo>, <geo  id='5855797'>Hawaii</geo>, <geo  id='4896861'>Illinois</geo>,
+in a dozen states including <geo  id='4155751'>Florida</geo>, <geo  id='4197000'>Georgia</geo>, <geo  id='5855797'>Hawaii</geo>, <geo  id='4896861'>Illinois</geo>,
 <geo  id='4921868'>Indiana</geo>, <geo  id='6254925'>Kentucky</geo>, <geo  id='4361885'>Maryland</geo>, <geo  id='6254926'>Massachusetts</geo>, <geo  id='4398678'>Missouri</geo>, <geo  id='5509151'>Nevada</geo>, <geo  id='5128638'>New
 York</geo>, and <geo  id='6254928'>Virginia</geo>, using a variety of methodologies for estimating
 the unmet legal needs of the poor.
-11 U.S. Census Bureau, Poverty in the United States: 1998,
+11 <ignore  id='undefined'>U.S.</ignore> Census Bureau, Poverty in the <geo  id='6252001'>United States</geo>: 1998,
 http://www.census.gov/prod/99pubs/p60-207.pdf
 12 Center for Budget and Policy Priorities, Analysis of 1998
 Poverty and Income Data, (September 1999).

@@ -79,7 +79,7 @@ access to the justice system because it has taken on the role of
 gateway to that system.
 In a sense, German&#x27;s new job isn&#x27;t far from where he started
 decades ago.
-After finishing high school in Cozad, Neb., German went off to
+After finishing high school in <geo  id='5066355'>Cozad, Neb.</geo>, German went off to
 the <geo  id='5080886'>University of Nebraska-Lincoln</geo>. As a sophomore, the 6-foot-1,
 160-pound quarterback joined the freshman football team. It was
 1961, Bob Devaney&#x27;s first year as coach.
@@ -94,14 +94,14 @@ copy of Devaney&#x27;s first playbook.
 German graduated with a mechanical engineering degree in 1965,
 then joined the Peace Corps, spending two years in <geo  id='3686110'>Colombia</geo>.
 Back in <geo  id='5073708'>Nebraska</geo>, he helped organize part of a whistlestop tour
-from Cheyenne, Wyo., across <geo  id='5073708'>Nebraska</geo> for the Robert Kennedy
+from <geo  id='5821086'>Cheyenne, Wyo.</geo>, across <geo  id='5073708'>Nebraska</geo> for the Robert Kennedy
 campaign. A few weeks later, Kennedy was assassinated in
 <geo  id='5332921'>California</geo>.
 German moved on to simultaneously earn a law degree from UNL and
 a master&#x27;s degree in regional planning from the University of
 <ignore  id='undefined'>Pennsylvania</ignore>. He worked for a legal-aid firm in <geo  id='5072006'>Lincoln</geo> and briefly
 ran a legal clinic with two friends. Then he went into private
-practice in Cozad.
+practice in <geo  id='5066355'>Cozad</geo>.
 In 1979, he stopped at a <geo  id='5071934'>Lexington</geo> clothing store to buy cowboy
 boots. A friend persuaded him to see a coffee farm in <geo  id='3624060'>Costa Rica</geo>,
 mostly as a fun trip.

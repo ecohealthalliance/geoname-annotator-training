@@ -38,10 +38,10 @@ Commission has endorsed a request to boost the filing fee from $10
 to $25 and could approve an ordinance as early as Tuesday to
 implement the fee hike.
 &quot;Currently, we spend about $250,000 a year in <geo  id='4151245'>Clay County</geo>, which
-is about 8 percent of our budget,&quot; said Figgins, adding that Clay
-County clients also represent about 8 percent of the total &quot;poverty
-population&quot; served by Legal Aid last year in Duval, Baker, Nassau
-and Clay counties.
+is about 8 percent of our budget,&quot; said Figgins, adding that <geo  id='4151245'>Clay
+County</geo> clients also represent about 8 percent of the total &quot;poverty
+population&quot; served by Legal Aid last year in <geo  id='4153840'>Duval</geo>, <geo  id='4146548'>Baker</geo>, <geo  id='4165603'>Nassau</geo>
+and <geo  id='4151245'>Clay</geo> counties.
 The additional revenue from higher court-filing fees will total
 about $60,000 a year, of which approximately $40,000 will be spent
 on salary for an additional lawyer to assist Gloria Einstein, who
@@ -58,7 +58,7 @@ the agency&#x27;s case load.
 The last time court filing fees were increased in <geo  id='4151245'>Clay County</geo> to
 help fund the program was in 1998, when commissioners approved an
 increase from $5 to $10.
-Of the more than 300 Legal Aid cases in Clay last year, roughly
+Of the more than 300 Legal Aid cases in <geo  id='4151245'>Clay</geo> last year, roughly
 40 percent involved women who had been abused by violent husbands
 and were seeking divorces, Figgins said. Most of the women were
 referred to Legal Aid by Quigley House, <geo  id='4151245'>Clay County</geo>&#x27;s sexual

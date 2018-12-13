@@ -245,8 +245,8 @@ services to low-income persons is not as easy as it looks. It
 requires systems and practices and mindsets and commitments that
 may be foreign to many other non-profit providers of human
 services. Moreover, the fact that Congress has placed numerous
-restrictions on legal services funding in the United
-States-restrictions that then attach to non-LSC funds-causes many
+restrictions on legal services funding in the <geo  id='6252001'>United
+States</geo>-restrictions that then attach to non-LSC funds-causes many
 organizations that might otherwise seriously consider applying for
 LSC funds to choose not to do so. However, the fact that the
 competition process has not resulted in widespread &quot;competition&quot;
@@ -550,7 +550,7 @@ and unshackled, is a dream that we will achieve. One day. Together.
 Here in <geo  id='6251999'>Canada</geo>. And in the <geo  id='6252001'>United States</geo>.
 Thank you again for allowing me to be with you today.
 i Twenty-five years ago, our government made a pledge to help
-ensure that all persons have access to America&#x27;s civil justice
+ensure that all persons have access to <geo  id='6252001'>America</geo>&#x27;s civil justice
 system by enacting legislation that created Legal Services
 Corporation. Over the past 27 years, LSC has helped millions of
 low-income citizens solve important, sometimes life-threatening,

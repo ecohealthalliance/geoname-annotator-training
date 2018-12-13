@@ -470,7 +470,7 @@ million, its highest level ever, when the American Bar
 Association&#x27;s (ABA) legal needs study was concluded in 1994. Using
 a variety of methodologies for estimating the unmet legal need of
 the poor, several states have since reached conclusions similar to
-the ABA study, including <geo  id='4155751'>Florida</geo>, <geo  id='614540'>Georgia</geo>, <geo  id='5855797'>Hawaii</geo>, <geo  id='4896861'>Illinois</geo>,
+the ABA study, including <geo  id='4155751'>Florida</geo>, <geo  id='4197000'>Georgia</geo>, <geo  id='5855797'>Hawaii</geo>, <geo  id='4896861'>Illinois</geo>,
 <geo  id='4921868'>Indiana</geo>, <geo  id='6254925'>Kentucky</geo>, <geo  id='4361885'>Maryland</geo>, <geo  id='6254926'>Massachusetts</geo>, <geo  id='4398678'>Missouri</geo>, <geo  id='5509151'>Nevada</geo>, <geo  id='5128638'>New
 York</geo>, and <geo  id='6254928'>Virginia</geo>. LSC asked for funding to conduct a new national
 legal needs study in its FY2001 budget request to Congress;

@@ -712,8 +712,8 @@ alcohol problems: a review. Addiction 1993;88:315-36.
 39. Center for Substance Abuse Treatment, Substance Abuse and
 Mental Health Services Administration. Alcohol and Other Drug
 Screening of Hospitalized Trauma Patients, Treatment Improvement
-Protocol (TIP), No. 16. <geo  id='4367175'>Rockville (MD</geo>): Department of Health and
-Human Services; 1995. DHHS Publication No. (SMA) 95-3014.
+Protocol (TIP), No. 16. <geo  id='4367175'>Rockville (MD</geo>): <ignore  id='undefined'>Department of Health and
+Human Services</ignore>; 1995. DHHS Publication No. (SMA) 95-3014.
 40. Soderstrom CA, Dailey JT, Kerns TJ. Alcohol and other
 drugs: an assessment of testing and clinical practices in <geo  id='6252001'>U.S.</geo>
 trauma centers. J Trauma 1994;36:68-73.
@@ -928,7 +928,7 @@ of primary care with the emergency room. J Subst Abuse
 1999;20:85-95.
 3. D&#x27;Onofrio G, Bernstein E, Bernstein J. The Emergency
 Physician and the Problem Drinker: Motivating Patients for Change.
-[videocassette] <geo  id='4944994'>South </geo><geo  id='4944994'><geo  id='4944994'>Natick (MA</geo></geo><geo  id='4944994'>)</geo>: Marino &amp; Company Production;
+[videocassette] <geo  id='4951466'>South Natick (MA)</geo>: Marino &amp; Company Production;
 1997.
 4. Miller WR, Sanchez VC. Motivating young adults for treatment
 and lifestyle change. In: Howard G, editor. Issues in Alcohol Use
@@ -1140,11 +1140,11 @@ clinicians working together will help to overcome barriers and
 promote best practices care for a range of drinkers in the
 emergency setting.
 References
-1. <ignore  id='undefined'>U.S.</ignore> <geo  id='4353078'>Department of Health and Human Services</geo>. Healthy People
+1. <ignore  id='undefined'>U.S.</ignore> <ignore  id='undefined'>Department of Health and Human Services</ignore>. Healthy People
 2000. National promotion and disease prevention objectives.
-<geo  id='4140963'>Washington (DC</geo>): <ignore  id='undefined'>U.S.</ignore> <geo  id='4353078'>Department of Health and Human Services</geo>;
+<geo  id='4140963'>Washington (DC</geo>): <ignore  id='undefined'>U.S.</ignore> <ignore  id='undefined'>Department of Health and Human Services</ignore>;
 1990. DHHS Publication No. (PHS) 91-50212.
-2. <ignore  id='undefined'>U.S.</ignore> <geo  id='4353078'>Department of Health and Human Services</geo>. Healthy People
+2. <ignore  id='undefined'>U.S.</ignore> <ignore  id='undefined'>Department of Health and Human Services</ignore>. Healthy People
 2010: Understanding and Improving Health. 2nd ed. <geo  id='4140963'>Washington (DC</geo>):
 <geo  id='6252001'>U.S.</geo> <geo  id='4138946'>Government Printing Office</geo>; 2000.
 3. Cherpitel CJ. Breath analysis and self-reports as measures

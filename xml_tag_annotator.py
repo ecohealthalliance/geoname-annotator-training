@@ -2,7 +2,6 @@
 from epitator.annotator import AnnoSpan, AnnoTier
 from bs4 import BeautifulSoup, NavigableString
 from lazy import lazy
-import six
 
 
 class XMLTagSpan(AnnoSpan):
@@ -22,6 +21,7 @@ class XMLTagSpan(AnnoSpan):
     def attrs(self):
         return self.element.attrs
 
+
 class XMLTagAnnotator:
 
     def __init__(self):
@@ -31,6 +31,7 @@ class XMLTagAnnotator:
         # Need to run this first before other annotators because it strips tags
         # and transforms the text
         soup = BeautifulSoup(doc.text, 'html.parser')
+
         def traverse(element, clean_content, spans):
             if isinstance(element, NavigableString):
                 clean_content += element
@@ -40,7 +41,7 @@ class XMLTagAnnotator:
                     clean_content, spans = traverse(child, clean_content, spans)
                 end = len(clean_content)
                 spans.append(XMLTagSpan(start, end, doc,
-                      element.attrs.get('id'), element))
+                    element.attrs.get('id'), element))
             return clean_content, spans
         clean_content = ""
         spans = []

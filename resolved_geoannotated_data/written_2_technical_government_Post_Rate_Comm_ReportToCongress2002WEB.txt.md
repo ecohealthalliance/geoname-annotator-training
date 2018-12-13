@@ -16,7 +16,7 @@ title: '[written_2/technical/government/Post_Rate_Comm/ReportToCongress2002WEB.t
 
 
 REPORT TO THE CONGRESS:
-AUTHORITY OF THE UNITED STATES POSTAL SERVICE TO INTRODUCE NEW
+AUTHORITY OF THE <ignore  id='undefined'>UNITED STATES POSTAL SERVICE</ignore> TO INTRODUCE NEW
 PRODUCTS AND SERVICES AND TO ENTER INTO RATE AND SERVICE AGREEMENTS
 WITH INDIVIDUAL CUSTOMERS OR GROUPS OF CUSTOMERS
 
@@ -108,7 +108,7 @@ particular areas of the Postal Service&#x27;s authority under existing
 law.1 Specifically, the conferees directed:
 …both the United States Postal Service and the Postal Rate
 Commission to independently report, 90 days after enactment of this
-Act, on the scope of existing authority of the US Postal Service,
+Act, on the scope of existing authority of the <ignore  id='undefined'>US</ignore> Postal Service,
 under title 39, <ignore  id='undefined'>United States</ignore> Code, and title 39, Code of Federal
 Regulations, to introduce and provide new products and services
 (including the introduction and provision of new products and
