@@ -36,7 +36,7 @@ discrimination that violated the First Amendment.
 Held: The funding restriction violates the First Amendment. Pp.
 5-15.
 (a) LSC and the Government, also a petitioner, claim that Rust
-v. Sullivan, 500 U. S. 173, in which this Court upheld a
+v. Sullivan, 500 <ignore  id='undefined'>U. S. 173</ignore>, in which this Court upheld a
 restriction prohibiting doctors employed by federally funded family
 planning clinics from discussing abortion with their patients,
 supports the restriction here. However, the Court has since
@@ -49,10 +49,10 @@ LEGAL SERVICES CORPORATION v. VELAZQUEZ
 Syllabus
 point-based funding decisions in instances in which the
 government is itself the speaker, see Board of Regents of Univ. of
-Wis. System v. Southworth, 529 U. S. 217, 229, 235, or instances,
+Wis. System v. Southworth, 529 <ignore  id='undefined'>U. S. </ignore>217, 229, 235, or instances,
 like Rust, in which the government uses private speakers to
 transmit information pertaining to its own program, Rosenberger v.
-Rector and Visitors of Univ. of Va., 515 U. S. 819, 833. Although
+Rector and Visitors of <ignore  id='undefined'>Univ. of Va.</ignore>, 515 <ignore  id='undefined'>U. S. </ignore>819, 833. Although
 the government has the latitude to ensure that its own message is
 being delivered, neither that latitude nor its rationale applies to
 subsidies for private speech in every instance. Like the
@@ -82,7 +82,7 @@ presenting arguments and analyses to the courts distorts the legal
 system by altering the attorneys&#x27; traditional role in much the same
 way broadcast systems or student publication networks were changed
 in the limited forum cases of <ignore  id='undefined'>Arkansas</ignore> Ed. Television Comm&#x27;n v.
-Forbes, 523 U. S. 666, and Rosenberger v. Rector and Visitors of
+Forbes, 523 <ignore  id='undefined'>U. S.</ignore> 666, and Rosenberger v. Rector and Visitors of
 Univ. of Va., supra. The Government may not design a subsidy to
 effect such a serious and fundamental restriction on the advocacy
 of attorneys and the functioning of the judiciary. An informed,
@@ -94,7 +94,7 @@ sifting out cases presenting constitutional challenges in order to
 insulate the Government&#x27;s laws from judicial inquiry. The result of
 this restriction would be two tiers of cases. There would be
 lingering doubt
-Cite as: 531 U. S. ____ (2001)
+Cite as: 531<ignore  id='undefined'> U. S. </ignore>____ (2001)
 Syllabus
 whether an LSC attorney&#x27;s truncated representation had resulted
 in complete analysis of the case, full advice to the client, and

@@ -11,17 +11,21 @@ from epitator.annotator import AnnoDoc, AnnoTier
 from epitator.geoname_annotator import GeonameAnnotator, GeonameFeatures
 from xml_tag_annotator import XMLTagAnnotator
 from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import cross_validate
 import numpy as np
+import re
 import sklearn
 import logging
 import pprint
 
 logging.getLogger('annotator.geoname_annotator').setLevel(logging.ERROR)
 
+city_state_code_re = re.compile(r"^(PPL|ADM|PCL)")
+
 geoname_annotator = GeonameAnnotator()
 
 HIGH_CONFIDENCE_THRESHOLD = 0.5
-GEONAME_SCORE_THRESHOLD = 0.15
+GEONAME_SCORE_THRESHOLD = 0.1
 
 
 def train_classifier(annotated_articles, prior_classifier=None):
@@ -47,10 +51,10 @@ def train_classifier(annotated_articles, prior_classifier=None):
                 for span, span_group in AnnoTier(geoname.spans)\
                     .group_spans_by_containing_span(article['sections_to_ignore'],
                                                     allow_partial_containment=True)]):
-                print("ignoring:", geoname['name'])
+                # print("ignoring:", geoname['name'])
                 continue
             feature_vectors.append(feature.values())
-            weights.append(len(geoname.spans))
+            weights.append(len(geoname.spans) * (2 if city_state_code_re.match(geoname.feature_code) else 1))
             geonameid = str(geoname['geonameid'])
             if geonameid in gold_locations:
                 used_gold_locations |= set([geonameid])
@@ -60,14 +64,18 @@ def train_classifier(annotated_articles, prior_classifier=None):
         print("unused gold locations:", gold_locations - used_gold_locations)
     # L1 regularization helps with overfitting by constraining the model
     # to use fewer variables.
-    clf = LogisticRegression(penalty='l1')
-    clf.fit(feature_vectors, labels, weights)
-    #cv_results = cross_validate(clf, feature_vectors, labels, cv=4, scoring=('f1',), return_estimator=True)
-    predictions = clf.predict_proba(feature_vectors)
-    print(sklearn.metrics.precision_recall_fscore_support(
-            np.array(labels),
-            predictions[:, 1] > 0.5,
-            average='micro'))
+    clf = LogisticRegression(
+        penalty='l1',
+        C=0.05,
+        solver='liblinear')
+    cv_results = cross_validate(clf, feature_vectors, labels, fit_params=dict(sample_weight=weights), cv=5, scoring=('f1',), return_estimator=True)
+    max_score = 0
+    print("Cross validation f-scores:")
+    for idx, score in enumerate(cv_results['test_f1']):
+        print(score)
+        if score > max_score:
+            max_score = score
+            clf = cv_results['estimator'][idx]
     clf.feature_names = GeonameFeatures.feature_names
     return clf
 
@@ -86,16 +94,14 @@ for gold_file in gold_files:
         'ignore': 100,
         'geo': 1
     }
-    doc.tiers['tags'].optimal_span_set(
-        prefer=lambda span: tag_values.get(span.tag_name, 0))
+    tags = doc.tiers['tags'].optimal_span_set(
+        prefer=lambda span: (tag_values.get(span.tag_name, 0), len(span),))
     p['content'] = doc.text
-    if 'geonameids' not in p:
-        p['geonameids'] = set([
-            span.attrs['id'] for span in doc.tiers['tags'].spans
-            if span.tag_name == 'geo'])
     p['sections_to_ignore'] = AnnoTier([
-        span for span in doc.tiers['tags'].spans
+        span for span in tags
         if span.tag_name == 'ignore'])
+    if 'geonameids' not in p:
+        p['geonameids'] = set(span.attrs['id'] for span in tags if span.tag_name != 'ignore')
     annotated_articles.append(p)
 
 

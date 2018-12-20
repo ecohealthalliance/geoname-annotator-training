@@ -110,7 +110,7 @@ Hebrew words) spoken by the Spanish exiles wherever they settled.
 Mizrahi (or “eastern”) Jews are from <geo  id='7729897'>West Asia</geo>, <geo  id='7729893'>Central
 Asia</geo>, and <geo  id='7729887'>North Africa</geo>, including black-eyed, high-cheekboned Yemenite
 Jews; Jews from the mountains of <geo  id='126585'>Kurdistan</geo> and the dusty plateaus of
-Bukhara; and Iraqi Jews, whose community existed from the days of the
+<geo  id='1114929'>Bukhara</geo>; and Iraqi Jews, whose community existed from the days of the
 Babylonian Captivity in the sixth century b.c. until modern times.
 Israelis from <geo  id='3865483'>Argentina</geo> are famous for their beef
 barbecues; many American Israelis lovingly celebrate Thanksgiving and

@@ -80,7 +80,7 @@ gateway to that system.
 In a sense, German&#x27;s new job isn&#x27;t far from where he started
 decades ago.
 After finishing high school in <geo  id='5066355'>Cozad, Neb.</geo>, German went off to
-the <geo  id='5080886'>University of Nebraska-Lincoln</geo>. As a sophomore, the 6-foot-1,
+the <geo  id='5080885'>University of Nebraska-Lincoln</geo>. As a sophomore, the 6-foot-1,
 160-pound quarterback joined the freshman football team. It was
 1961, Bob Devaney&#x27;s first year as coach.
 One day, German was out throwing passes at an early practice.

@@ -23,7 +23,7 @@ Hidden beneath the glitter are veins of the old royal and romantic
 <geo  id='5854380'>Waikiki</geo> (see page 28).
 <ignore  id='undefined'>The Bishop Museum</ignore> is a repository of Hawaiiana and its
 Polynesian legacies (see page 36).
-The <geo  id='5853844'>USS Arizona Memorial</geo> at Pearl Harbor powerfully evokes
+The <geo  id='5853844'>USS Arizona Memorial</geo> at <geo  id='10057006'>Pearl Harbor</geo> powerfully evokes
 the outbreak of World War II in the Pacific (see page 39).
 The North Shore combines native Hawaiian culture and natural
 beauty with the modern charm of surfing villages and beaches (see
@@ -35,7 +35,7 @@ beyond <geo  id='5855648'>Diamond Head</geo>, draws thousands of snorkelers to i
 island (see page 51).
 <geo  id='5849996'>Lahaina</geo>, once the chief whaling port of the Pacific, teems
 with period architecture and trendy shops (see page 46).
-The road to and from Hana goes through the heart of tropical
+The road to and from <geo  id='5855471'>Hana</geo> goes through the heart of tropical
 forests and the “real <geo  id='5855797'>Hawaii</geo>” (see page 53).
 <geo  id='5855797'>Hawaii</geo> (<geo  id='5855799'>Big Island</geo>): The <ignore  id='undefined'>Kona Coast</ignore> has superb beaches and
 the <ignore  id='undefined'>Puuhonua-O-Honaunau City of Refuge</ignore>, <geo  id='5855797'>Hawaii</geo>’s most striking native

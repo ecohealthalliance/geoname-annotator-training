@@ -636,7 +636,7 @@ rural carriers only). City carrier time is derived from the USPS
 Cost Segments and Components Report for FY 1999 and the average
 time is
 18 <geo  id='2988506'>Paris</geo> has 20 delivery areas and more than 1000 routes, and
-many delivery areas, like in Lozère only have one route.
+many delivery areas, like in <geo  id='2997289'>Lozère</geo> only have one route.
 19 See Roy 1999 &quot;A Technico Economic Analysis of the Costs of
 Outside Work in Postal Delivery&quot;. This model is used in the cost
 accounting system to determine costs by products.

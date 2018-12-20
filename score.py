@@ -39,18 +39,18 @@ def score_LocationExtraction():
 
         doc = AnnoDoc(processed['content'])
         doc.add_tier(gold_geotag_annotator)
-        doc.add_tier(geoname_annotator, show_features_for_geonameids=set(['7031697', '2950159']))
+        doc.add_tier(geoname_annotator, show_features_for_geonameids=set(['7031697', '2950159', '5417618']))
         # Remove overlapping gold spans favoring the ignored ones and geospans
         tag_values = {
             'ignore': 100,
             'geo': 1
         }
-        doc.tiers['tags'].optimal_span_set(
-            prefer=lambda span: tag_values.get(span.tag_name, 0))
+        tags = doc.tiers['tags'].optimal_span_set(
+            prefer=lambda span: (tag_values.get(span.tag_name, 0), len(span),))
         connection = get_database_connection()
         connection.row_factory = sqlite3.Row
         cursor = connection.cursor()
-        geoname_ids = [span.label for span in doc.tiers['tags'].spans
+        geoname_ids = [span.label for span in tags
                        if span.tag_name != 'ignore']
         geoname_results = cursor.execute('''
         SELECT *
@@ -62,7 +62,7 @@ def score_LocationExtraction():
         extra_geonames = set(geoname_ids) - set(geonames_by_id.keys())
         if extra_geonames != set():
             print("Warning! Extra annotated geonames were not found in sqlite3 database: ", extra_geonames)
-        spans_in_gold = doc.tiers['tags'].group_spans_by_containing_span(doc.tiers['geonames'], allow_partial_containment=True)
+        spans_in_gold = tags.group_spans_by_containing_span(doc.tiers['geonames'], allow_partial_containment=True)
         for gold_span, gn_spans in spans_in_gold:
             if gold_span.tag_name == 'ignore':
                 continue
@@ -74,7 +74,7 @@ def score_LocationExtraction():
                     print([(span.metadata['geoname'].name, span.metadata['geoname'].geonameid,) for span in gn_spans])
                 fns += 1
         gold_in_spans = doc.tiers['geonames'].group_spans_by_containing_span(
-            doc.tiers['tags'], allow_partial_containment=True)
+            tags, allow_partial_containment=True)
         for gn_span, gold_spans in gold_in_spans:
             if any(gold_span.tag_name == 'ignore' for gold_span in gold_spans):
                 ignored += 1
@@ -85,7 +85,7 @@ def score_LocationExtraction():
                 if gold_file.endswith('manual_annotations.md'):
                     print("FPos:", gn_span.text, gn_span.metadata['geoname'].geonameid, gn_span.metadata['geoname'].name)
                 fps += 1
-        print("\n" * 2)
+        print("\n")
 
     print('tps:', tps)
     print('fns:', fns)
