@@ -17,6 +17,7 @@ import re
 import sklearn
 import logging
 import pprint
+from expand_geonames import expand_geoname_id
 
 logging.getLogger('annotator.geoname_annotator').setLevel(logging.ERROR)
 
@@ -36,7 +37,10 @@ def train_classifier(annotated_articles, prior_classifier=None):
     weights = []
     feature_vectors = []
     for article in annotated_articles:
-        gold_locations = set(map(str, article.get('geonameids')))
+        gold_locations = set()
+        for geonameid in article.get('geonameids'):
+            assert isinstance(geonameid, str)
+            gold_locations.update(expand_geoname_id(geonameid))
         doc = AnnoDoc(article['content'])
         candidates = geoname_annotator.get_candidate_geonames(doc)
         gn_features = geoname_annotator.extract_features(candidates, doc)
@@ -55,9 +59,9 @@ def train_classifier(annotated_articles, prior_classifier=None):
                 continue
             feature_vectors.append(feature.values())
             weights.append(len(geoname.spans) * (2 if city_state_code_re.match(geoname.feature_code) else 1))
-            geonameid = str(geoname['geonameid'])
-            if geonameid in gold_locations:
-                used_gold_locations |= set([geonameid])
+            geonameid = geoname['geonameid']q
+            if expand_geoname_id(geonameid) & gold_locations:
+                used_gold_locations |= expand_geoname_id(geonameid)
                 labels.append(True)
             else:
                 labels.append(False)
