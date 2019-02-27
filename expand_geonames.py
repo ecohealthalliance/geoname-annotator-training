@@ -7,12 +7,9 @@ connection = get_database_connection()
 connection.row_factory = sqlite3.Row
 cursor = connection.cursor()
 
-# ADM geonames are considered equivalent to the geonames they directly contain and
-# share a name with.
-# Indirect containment makes false positives more likely (Mexico and Mexico City)
-# There are still false positives for things like schools.
-# http://www.geonames.org/6784866/pesantren.html
-# Island of Hawaii
+# ADM geonames are considered equivalent to the geonames they directly contain 
+# (have matching adm[1-4] properties) and share a name with.
+# Indirect containment makes false positives more likely (e.g. Mexico and Mexico City)
 result = cursor.execute('''
 SELECT
 alternatename_lemmatized,
