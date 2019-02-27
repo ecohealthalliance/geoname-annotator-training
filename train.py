@@ -59,7 +59,7 @@ def train_classifier(annotated_articles, prior_classifier=None):
                 continue
             feature_vectors.append(feature.values())
             weights.append(len(geoname.spans) * (2 if city_state_code_re.match(geoname.feature_code) else 1))
-            geonameid = geoname['geonameid']q
+            geonameid = geoname['geonameid']
             if expand_geoname_id(geonameid) & gold_locations:
                 used_gold_locations |= expand_geoname_id(geonameid)
                 labels.append(True)
