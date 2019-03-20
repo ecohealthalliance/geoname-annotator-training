@@ -53,6 +53,7 @@ def score_LocationExtraction():
         cursor = connection.cursor()
         geoname_ids = set([span.label for span in tags
                        if span.tag_name != 'ignore'])
+        geoname_ids |= set([span.geoname.geonameid for span in doc.tiers['geonames']])
         for geoname_id in list(geoname_ids):
             geoname_ids.update(expand_geoname_id(geoname_id))
         geoname_results = cursor.execute('''
@@ -72,7 +73,7 @@ def score_LocationExtraction():
             if any(expand_geoname_id(gold_span.label) & expand_geoname_id(gn_span.geoname['geonameid']) for gn_span in gn_spans):
                 tps += 1
             else:
-                if gold_file.endswith('manual_annotations.md'):
+                if True or gold_file.endswith('manual_annotations.md'):
                     print("FNeg:", gold_span, gold_span.text)
                     print([(span.metadata['geoname'].name, span.metadata['geoname'].geonameid,) for span in gn_spans])
                 fns += 1
@@ -85,10 +86,11 @@ def score_LocationExtraction():
             gold_span_ids = set()
             for gold_span in gold_spans:
                 gold_span_ids.update(expand_geoname_id(gold_span.label))
-            if not any(has_containment_relationship(gn_span.geoname,
+            if not any(has_containment_relationship(geonames_by_id.get(geoname_id),
                                                     geonames_by_id.get(gold_span_id))
+                       for geoname_id in expand_geoname_id(gn_span.geoname.geonameid)
                        for gold_span_id in gold_span_ids):
-                if gold_file.endswith('manual_annotations.md'):
+                if True or gold_file.endswith('manual_annotations.md'):
                     print("FPos:", gn_span.text, gn_span.metadata['geoname'].geonameid, gn_span.metadata['geoname'].name)
                 fps += 1
         print("\n")

@@ -40,7 +40,8 @@ def train_classifier(annotated_articles, prior_classifier=None):
         gold_locations = set()
         for geonameid in article.get('geonameids'):
             assert isinstance(geonameid, str)
-            gold_locations.update(expand_geoname_id(geonameid))
+            expanded_geonames = expand_geoname_id(geonameid)
+            gold_locations.update(expanded_geonames)
         doc = AnnoDoc(article['content'])
         candidates = geoname_annotator.get_candidate_geonames(doc)
         gn_features = geoname_annotator.extract_features(candidates, doc)
@@ -80,6 +81,8 @@ def train_classifier(annotated_articles, prior_classifier=None):
         if score > max_score:
             max_score = score
             clf = cv_results['estimator'][idx]
+    print("Number of examples: " + str(len(feature_vectors)))
+    print("Number of positive labels: " + str(np.array(labels).sum()))
     clf.feature_names = GeonameFeatures.feature_names
     return clf
 
