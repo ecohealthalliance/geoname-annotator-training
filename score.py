@@ -12,6 +12,9 @@ import sqlite3
 from expand_geonames import expand_geoname_id
 
 
+debug = False
+
+
 def has_containment_relationship(a, b):
     if b == None:
         return False
@@ -73,7 +76,7 @@ def score_LocationExtraction():
             if any(expand_geoname_id(gold_span.label) & expand_geoname_id(gn_span.geoname['geonameid']) for gn_span in gn_spans):
                 tps += 1
             else:
-                if True or gold_file.endswith('manual_annotations.md'):
+                if debug or gold_file.endswith('manual_annotations.md'):
                     print("FNeg:", gold_span, gold_span.text)
                     print([(span.metadata['geoname'].name, span.metadata['geoname'].geonameid,) for span in gn_spans])
                 fns += 1
@@ -90,7 +93,7 @@ def score_LocationExtraction():
                                                     geonames_by_id.get(gold_span_id))
                        for geoname_id in expand_geoname_id(gn_span.geoname.geonameid)
                        for gold_span_id in gold_span_ids):
-                if True or gold_file.endswith('manual_annotations.md'):
+                if debug or gold_file.endswith('manual_annotations.md'):
                     print("FPos:", gn_span.text, gn_span.metadata['geoname'].geonameid, gn_span.metadata['geoname'].name)
                 fps += 1
         print("\n")

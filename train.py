@@ -26,7 +26,7 @@ city_state_code_re = re.compile(r"^(PPL|ADM|PCL)")
 geoname_annotator = GeonameAnnotator()
 
 HIGH_CONFIDENCE_THRESHOLD = 0.5
-GEONAME_SCORE_THRESHOLD = 0.1
+GEONAME_SCORE_THRESHOLD = 0.13
 
 
 def train_classifier(annotated_articles, prior_classifier=None):
@@ -71,7 +71,7 @@ def train_classifier(annotated_articles, prior_classifier=None):
     # to use fewer variables.
     clf = LogisticRegression(
         penalty='l1',
-        C=0.05,
+        C=0.1,
         solver='liblinear')
     cv_results = cross_validate(clf, feature_vectors, labels, fit_params=dict(sample_weight=weights), cv=5, scoring=('f1',), return_estimator=True)
     max_score = 0
