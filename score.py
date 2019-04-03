@@ -2,14 +2,15 @@
 from __future__ import absolute_import
 from __future__ import print_function
 import glob
+import sqlite3
 from process_resource_file import process_resource_file
-from epitator.annotator import AnnoDoc
+from epitator.annotator import AnnoDoc, AnnoTier
 from epitator.geoname_annotator import GeonameAnnotator, location_contains, GeonameRow
 from epitator.get_database_connection import get_database_connection
 from xml_tag_annotator import XMLTagAnnotator
 import geoname_classifier
-import sqlite3
 from expand_geonames import expand_geoname_id
+from utils import combine_geotags
 
 
 debug = False
@@ -44,13 +45,7 @@ def score_LocationExtraction():
         doc = AnnoDoc(processed['content'])
         doc.add_tier(gold_geotag_annotator)
         doc.add_tier(geoname_annotator, show_features_for_geonameids=set(['7031697', '2950159', '5417618']))
-        # Remove overlapping gold spans favoring the ignored ones and geospans
-        tag_values = {
-            'ignore': 100,
-            'geo': 1
-        }
-        tags = doc.tiers['tags'].optimal_span_set(
-            prefer=lambda span: (tag_values.get(span.tag_name, 0), len(span),))
+        tags = doc.tiers['tags']
         connection = get_database_connection()
         connection.row_factory = sqlite3.Row
         cursor = connection.cursor()
@@ -69,6 +64,8 @@ def score_LocationExtraction():
         extra_geonames = geoname_ids - set(geonames_by_id.keys())
         if extra_geonames != set():
             print("Warning! Extra annotated geonames were not found in sqlite3 database: ", extra_geonames)
+        tags = combine_geotags(tags, geonames_by_id)
+
         spans_in_gold = tags.group_spans_by_containing_span(doc.tiers['geonames'], allow_partial_containment=True)
         for gold_span, gn_spans in spans_in_gold:
             if gold_span.tag_name == 'ignore':

@@ -6,18 +6,21 @@ The classifier is outputted as a self-contained python script.
 from __future__ import absolute_import
 from __future__ import print_function
 import glob
-from process_resource_file import process_resource_file
-from epitator.annotator import AnnoDoc, AnnoTier
-from epitator.geoname_annotator import GeonameAnnotator, GeonameFeatures
-from xml_tag_annotator import XMLTagAnnotator
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import cross_validate
+import sqlite3
 import numpy as np
 import re
 import sklearn
 import logging
 import pprint
+from process_resource_file import process_resource_file
+from epitator.annotator import AnnoDoc, AnnoTier
+from epitator.geoname_annotator import GeonameAnnotator, GeonameFeatures, GeonameRow
+from epitator.get_database_connection import get_database_connection
+from xml_tag_annotator import XMLTagAnnotator
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import cross_validate
 from expand_geonames import expand_geoname_id
+from utils import combine_geotags
 
 logging.getLogger('annotator.geoname_annotator').setLevel(logging.ERROR)
 
@@ -28,6 +31,7 @@ geoname_annotator = GeonameAnnotator()
 HIGH_CONFIDENCE_THRESHOLD = 0.5
 GEONAME_SCORE_THRESHOLD = 0.13
 
+EXPAND_GEONAMES = False
 
 def train_classifier(annotated_articles, prior_classifier=None):
     """
@@ -40,8 +44,11 @@ def train_classifier(annotated_articles, prior_classifier=None):
         gold_locations = set()
         for geonameid in article.get('geonameids'):
             assert isinstance(geonameid, str)
-            expanded_geonames = expand_geoname_id(geonameid)
-            gold_locations.update(expanded_geonames)
+            if EXPAND_GEONAMES:
+                expanded_geonames = expand_geoname_id(geonameid)
+                gold_locations.update(expanded_geonames)
+            else:
+                gold_locations.add(geonameid)
         doc = AnnoDoc(article['content'])
         candidates = geoname_annotator.get_candidate_geonames(doc)
         gn_features = geoname_annotator.extract_features(candidates, doc)
@@ -61,11 +68,15 @@ def train_classifier(annotated_articles, prior_classifier=None):
             feature_vectors.append(feature.values())
             weights.append(len(geoname.spans) * (2 if city_state_code_re.match(geoname.feature_code) else 1))
             geonameid = geoname['geonameid']
-            if expand_geoname_id(geonameid) & gold_locations:
-                used_gold_locations |= expand_geoname_id(geonameid)
-                labels.append(True)
+            if EXPAND_GEONAMES:
+                if expand_geoname_id(geonameid) & gold_locations:
+                    used_gold_locations |= expand_geoname_id(geonameid)
+                    labels.append(True)
+                else:
+                    labels.append(False)
             else:
-                labels.append(False)
+                labels.append(geonameid in gold_locations)
+                used_gold_locations.add(geonameid)
         print("unused gold locations:", gold_locations - used_gold_locations)
     # L1 regularization helps with overfitting by constraining the model
     # to use fewer variables.
@@ -96,13 +107,23 @@ for gold_file in gold_files:
     p['__path__'] = gold_file
     doc = AnnoDoc(p['content'])
     doc.add_tier(gold_geotag_annotator)
-    # Remove overlapping gold spans favoring the ignored ones and geospans
-    tag_values = {
-        'ignore': 100,
-        'geo': 1
-    }
-    tags = doc.tiers['tags'].optimal_span_set(
-        prefer=lambda span: (tag_values.get(span.tag_name, 0), len(span),))
+    tags = doc.tiers['tags']
+    connection = get_database_connection()
+    connection.row_factory = sqlite3.Row
+    cursor = connection.cursor()
+    geoname_ids = set([span.label for span in tags
+                   if span.tag_name != 'ignore'])
+    geoname_results = cursor.execute('''
+    SELECT *
+    FROM geonames
+    WHERE geonameid IN
+    (''' + ','.join('?' for x in geoname_ids) + ')', list(geoname_ids))
+    geoname_results = [GeonameRow(r) for r in geoname_results]
+    geonames_by_id = {r['geonameid']: r for r in geoname_results}
+    extra_geonames = geoname_ids - set(geonames_by_id.keys())
+    if extra_geonames != set():
+        print("Warning! Extra annotated geonames were not found in sqlite3 database: ", extra_geonames)
+    tags = combine_geotags(tags, geonames_by_id)
     p['content'] = doc.text
     p['sections_to_ignore'] = AnnoTier([
         span for span in tags
