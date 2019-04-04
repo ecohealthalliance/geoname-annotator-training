@@ -178,7 +178,7 @@ abuse and dependence. CAGE is a mnemonic from four questions, Cut
 down, Annoyed, Guilty, and Eye opener. The questions address
 problems over the patient&#x27;s lifetime. CAGE takes 1 to 2 minutes to
 administer.24,25
-The MAST (<ignore  id='undefined'>Michigan</ignore> Alcohol-Screening Test), developed in 1971 as
+The MAST (Michigan Alcohol-Screening Test), developed in 1971 as
 a screen for alcohol abuse and dependence, has 24 yes/no questions.
 MAST has been self-administered and used in a computer format. It
 addresses problems over the patient&#x27;s lifetime. MAST requires 20
@@ -439,22 +439,22 @@ References
 risk factors in emergency department patients: a multisite survey.
 Acad Emerg Med 1998; 5:781-7.
 2. American Psychiatric Association. Diagnostic and Statistical
-Manual of Mental Disorders. <ignore  id='undefined'>Washington (DC</ignore>): American Psychiatric
+Manual of Mental Disorders. Washington (DC): American Psychiatric
 Press; 1994.
 3. Spitzer R, Williams J, Gibbon M, et al. User&#x27;s Guide for the
-Structured Clinical Interview for DSM-III-R. <ignore  id='undefined'>Washington (DC</ignore>):
+Structured Clinical Interview for DSM-III-R. Washington (DC):
 American Psychiatric Press; 1990.
 4. National Institute on Alcohol Abuse and Alcoholism. The
 Physician&#x27;s Guide to Helping Patients with Alcohol Problems.
-<ignore  id='undefined'>Washington (DC</ignore>): <ignore  id='undefined'>U.S.</ignore> <ignore  id='undefined'>Department of Health and Human Services</ignore>;
+Washington (DC): U.S. Department of Health and Human Services;
 1995. NIH Publication No. 95-3769.
 5. Soderstrom C, Smith GS, Kufera JA, et al. The accuracy of
-the CAGE, the Brief <ignore  id='undefined'>Michigan</ignore> Alcoholism Screening Test, and the
+the CAGE, the Brief Michigan Alcoholism Screening Test, and the
 Alcohol Use Disorders Identification Test in screening trauma
 center patients for alcoholism. J Trauma 1997;43:962-9.
 6. Gale T, Ja W, Welty T. Differences in detection of alcohol
 use in a prenatal population (on a Northern Plains Indian
-Reservation) using various methods of ascertainment. <ignore  id='undefined'>South Dakota</ignore>
+Reservation) using various methods of ascertainment. South Dakota
 Journal of Medicine 1998;51:235-40.
 7. Cherpitel C. Screening for alcohol problems in the emergency
 department. Ann Emerg Med 1995;26:158-66.
@@ -508,13 +508,13 @@ JAMA. 1984;252: 1905-7.
 validation of a new alcohol screening instrument. Am J Psychiatry
 1974;131:1121-3.
 26. Pokorny A, Miller B, Kaplan H. The Brief MAST: a shortened
-version of the <ignore  id='undefined'>Michigan</ignore> Alcoholism Screening Test. Am J Psychiatry
+version of the Michigan Alcoholism Screening Test. Am J Psychiatry
 1972;129:342-8.
-27. Selzer M. The <ignore  id='undefined'>Michigan</ignore> Alcoholism Screening Test: the quest
+27. Selzer M. The Michigan Alcoholism Screening Test: the quest
 for a new diagnostic instrument. Am J Psychiatry
 1971;127:1653-8.
 28. Selzer M, Vinokur A, van Rooijen M. A self-administered
-Short <ignore  id='undefined'>Michigan</ignore> Alcoholism Screening Test (SMAST). J Stud Alcohol
+Short Michigan Alcoholism Screening Test (SMAST). J Stud Alcohol
 1975;36:117-26.
 29. Davis L, Jr., Hurt R, Morse R, O&#x27;Brien P. Discriminant
 analysis of the Self-Administered Alcoholism Screening Test.
@@ -542,7 +542,7 @@ Screen. J Stud Alcohol 2000;61:447-9.
 instruments for problem drinking among blacks, whites and Hispanics
 in an emergency room population. J Stud Alcohol 1998;59:420-6.
 37. Soderstrom CA, Smith GH, Kufera JA, et al. The accuracy of
-the CAGE, the Brief <ignore  id='undefined'>Michigan</ignore> Alcohol Screening Test, and the
+the CAGE, the Brief Michigan Alcohol Screening Test, and the
 Alcohol Use Disorders Identification Test in screening trauma
 center patients for alcoholism. J Trauma 1997; 43:962-9.
 38. Fiellin DA, Reid MC, O&#x27;Connor PG. Screening for alcohol

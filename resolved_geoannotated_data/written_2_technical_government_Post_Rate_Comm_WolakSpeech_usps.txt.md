@@ -19,7 +19,7 @@ increase in 1) Available modes of interpersonal communication and
 the range in quality of these modes of communication in terms
 speed, reliability, and flexibility 2) Reductions in the price of
 these modes of communication-long-distance telephone service, FAX
-machines, on-line information services CompuServe and <ignore  id='undefined'>America</ignore>
+machines, on-line information services CompuServe and America
 Online (zero price for incremental messages)
 Many of these modes of communication are very attractive
 alternatives to traditional postal delivery services supplied by

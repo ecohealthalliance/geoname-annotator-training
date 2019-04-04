@@ -99,7 +99,7 @@ campaign. A few weeks later, Kennedy was assassinated in
 <geo  id='5332921'>California</geo>.
 German moved on to simultaneously earn a law degree from UNL and
 a master&#x27;s degree in regional planning from the University of
-<ignore  id='undefined'>Pennsylvania</ignore>. He worked for a legal-aid firm in <geo  id='5072006'>Lincoln</geo> and briefly
+Pennsylvania. He worked for a legal-aid firm in <geo  id='5072006'>Lincoln</geo> and briefly
 ran a legal clinic with two friends. Then he went into private
 practice in <geo  id='5066355'>Cozad</geo>.
 In 1979, he stopped at a <geo  id='5071934'>Lexington</geo> clothing store to buy cowboy

@@ -516,7 +516,7 @@ campaign ribbons from the war of HR22. Some people want to pick up
 that very tattered battle flag, put on their brightest red coats,
 form into straight lines and march one more time up Jenkin&#x27;s Hill.
 For those of you who may not know, Jenkin&#x27;s Hill is the hill on
-which sits the <ignore  id='undefined'>U.S.</ignore> Capitol. Price caps may sound more attractive
+which sits the U.S. Capitol. Price caps may sound more attractive
 with every passing rate case. But, as I have tried to explain to
 some of you, costs trumped caps in HR22; that is, you were still
 likely to see increases akin to those you experience under current

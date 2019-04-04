@@ -124,12 +124,12 @@ documentation requirements.
 It should be kept in mind that the issue is largely one of
 grantee compliance with technical and administrative guidance on
 how and when to report certain activities. In no instance has LSC,
-its Inspector General, or the <ignore  id='undefined'>General Accounting Office</ignore> identified
+its Inspector General, or the General Accounting Office identified
 any fraud or intentional misrepresentation by any of the grantees
 in their compilation and reporting of this data. LSC will
 aggressively take steps to correct problems associated with the CSR
 system, and will continue to make full and timely reports to the
-<ignore  id='undefined'>U.S.</ignore> Congress and the public. LSC views the issues concerning the
+U.S. Congress and the public. LSC views the issues concerning the
 CSR data to be akin to those encountered by many government
 entities as they attempt to meet the goals envisioned by the
 Government Performance and Results Act (GPRA).
@@ -217,9 +217,9 @@ delivering critical legal services to low-income individuals.
 The audits conducted by the <ignore  id='undefined'>General Accounting Office</ignore> (GAO) and
 reported in June 1999, confirmed the Inspector General&#x27;s findings
 as to the factors causing systemic errors in grantee case
-reporting. 4 The GAO visited five large programs: <ignore  id='undefined'>Puerto Rico</ignore> Legal
+reporting. 4 The GAO visited five large programs: Puerto Rico Legal
 Services, Inc., Legal Services for <geo  id='5128581'>New York City</geo>, Legal Aid
-Foundation of <ignore  id='undefined'>Los Angeles</ignore>, Legal Assistance Foundation of <ignore  id='undefined'>Chicago</ignore>,
+Foundation of Los Angeles, Legal Assistance Foundation of Chicago,
 and Legal Aid Bureau, Inc. in <geo  id='4347778'>Baltimore, Maryland</geo>. Overall, the GAO
 deemed questionable approximately 34 percent of both open and
 closed cases reported by the five grantees in 1997. The percentage
@@ -396,7 +396,7 @@ some grantees did use Self-Inspection data to exclude
 Leveraging Federal Resources
 Federal funding to Legal Services Corporation provides the
 national infrastructure for the
-<ignore  id='undefined'>U.S.</ignore> civil legal services delivery system. But for the federal
+U.S. civil legal services delivery system. But for the federal
 investment, the overwhelming majority of cases reported by LSC
 grantees would not have been possible. In six states, the federal
 investment represents almost the entire contribution for providing
@@ -628,7 +628,7 @@ in a dozen states including <geo  id='4155751'>Florida</geo>, <geo  id='4197000'
 <geo  id='4921868'>Indiana</geo>, <geo  id='6254925'>Kentucky</geo>, <geo  id='4361885'>Maryland</geo>, <geo  id='6254926'>Massachusetts</geo>, <geo  id='4398678'>Missouri</geo>, <geo  id='5509151'>Nevada</geo>, <geo  id='5128638'>New
 York</geo>, and <geo  id='6254928'>Virginia</geo>, using a variety of methodologies for estimating
 the unmet legal needs of the poor.
-11 <ignore  id='undefined'>U.S.</ignore> Census Bureau, Poverty in the <geo  id='6252001'>United States</geo>: 1998,
+11 U.S. Census Bureau, Poverty in the <geo  id='6252001'>United States</geo>: 1998,
 http://www.census.gov/prod/99pubs/p60-207.pdf
 12 Center for Budget and Policy Priorities, Analysis of 1998
 Poverty and Income Data, (September 1999).
@@ -706,7 +706,7 @@ bankruptcy, unemployment and disability claims, and many other
 issues faced by millions of low-income Americans. Despite LSC&#x27;s
 significant efforts to improve data accuracy, there may be
 occurrences of errors in documentation or substance.
-In order to fulfill our pledge to the <ignore  id='undefined'>U.S.</ignore> Congress and to the
+In order to fulfill our pledge to the U.S. Congress and to the
 general public concerning our commitment to providing the most
 accurate and reliable data, we adjusted the number of cases
 reported by LSC grantees (1,038,662) by the average estimated error
@@ -758,5 +758,5 @@ restrictions enacted in 1996, and creating new and more meaningful
 ways to evaluate the work of legal services programs receiving
 federal funds. We call on Congress, the private bar, and local and
 state governments to support LSC in fulfilling its Congressional
-mandate to provide low-income individuals throughout <ignore  id='undefined'>America</ignore> with
+mandate to provide low-income individuals throughout America with
 real, meaningful access to our nation&#x27;s justice system.

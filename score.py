@@ -2,13 +2,18 @@
 from __future__ import absolute_import
 from __future__ import print_function
 import glob
+import sqlite3
 from process_resource_file import process_resource_file
-from epitator.annotator import AnnoDoc
+from epitator.annotator import AnnoDoc, AnnoTier
 from epitator.geoname_annotator import GeonameAnnotator, location_contains, GeonameRow
 from epitator.get_database_connection import get_database_connection
 from xml_tag_annotator import XMLTagAnnotator
 import geoname_classifier
-import sqlite3
+from expand_geonames import expand_geoname_id, EXPAND_GEONAMES
+from utils import combine_geotags
+
+
+debug = False
 
 
 def has_containment_relationship(a, b):
@@ -40,36 +45,40 @@ def score_LocationExtraction():
         doc = AnnoDoc(processed['content'])
         doc.add_tier(gold_geotag_annotator)
         doc.add_tier(geoname_annotator, show_features_for_geonameids=set(['7031697', '2950159', '5417618']))
-        # Remove overlapping gold spans favoring the ignored ones and geospans
-        tag_values = {
-            'ignore': 100,
-            'geo': 1
-        }
-        tags = doc.tiers['tags'].optimal_span_set(
-            prefer=lambda span: (tag_values.get(span.tag_name, 0), len(span),))
+        tags = doc.tiers['tags']
         connection = get_database_connection()
         connection.row_factory = sqlite3.Row
         cursor = connection.cursor()
-        geoname_ids = [span.label for span in tags
-                       if span.tag_name != 'ignore']
+        geoname_ids = set([span.label for span in tags
+                       if span.tag_name != 'ignore'])
+        geoname_ids |= set([span.geoname.geonameid for span in doc.tiers['geonames']])
+        if EXPAND_GEONAMES:
+            for geoname_id in list(geoname_ids):
+                geoname_ids.update(expand_geoname_id(geoname_id))
         geoname_results = cursor.execute('''
         SELECT *
         FROM geonames
         WHERE geonameid IN
-        (''' + ','.join('?' for x in geoname_ids) + ')', geoname_ids)
+        (''' + ','.join('?' for x in geoname_ids) + ')', list(geoname_ids))
         geoname_results = [GeonameRow(r) for r in geoname_results]
         geonames_by_id = {r['geonameid']: r for r in geoname_results}
-        extra_geonames = set(geoname_ids) - set(geonames_by_id.keys())
+        extra_geonames = geoname_ids - set(geonames_by_id.keys())
         if extra_geonames != set():
             print("Warning! Extra annotated geonames were not found in sqlite3 database: ", extra_geonames)
+        tags = combine_geotags(tags, geonames_by_id)
+
         spans_in_gold = tags.group_spans_by_containing_span(doc.tiers['geonames'], allow_partial_containment=True)
         for gold_span, gn_spans in spans_in_gold:
             if gold_span.tag_name == 'ignore':
                 continue
-            if any(gold_span.label == gn_span.geoname['geonameid'] for gn_span in gn_spans):
+            if EXPAND_GEONAMES:
+                match_found = any(expand_geoname_id(gold_span.label) & expand_geoname_id(gn_span.geoname['geonameid']) for gn_span in gn_spans)
+            else:
+                match_found = any(gold_span.label == gn_span.geoname['geonameid'] for gn_span in gn_spans)
+            if match_found:
                 tps += 1
             else:
-                if gold_file.endswith('manual_annotations.md'):
+                if debug or gold_file.endswith('manual_annotations.md'):
                     print("FNeg:", gold_span, gold_span.text)
                     print([(span.metadata['geoname'].name, span.metadata['geoname'].geonameid,) for span in gn_spans])
                 fns += 1
@@ -79,10 +88,27 @@ def score_LocationExtraction():
             if any(gold_span.tag_name == 'ignore' for gold_span in gold_spans):
                 ignored += 1
                 continue
-            if not any(has_containment_relationship(gn_span.geoname,
-                                                    geonames_by_id.get(gold_span.label))
-                       for gold_span in gold_spans):
-                if gold_file.endswith('manual_annotations.md'):
+            gold_span_ids = set()
+            for gold_span in gold_spans:
+                if EXPAND_GEONAMES:
+                    gold_span_ids.update(expand_geoname_id(gold_span.label))
+                else:
+                    gold_span_ids.add(gold_span.label)
+            if EXPAND_GEONAMES:
+                match_found = any(
+                    has_containment_relationship(
+                        geonames_by_id.get(geoname_id),
+                        geonames_by_id.get(gold_span_id))
+                    for geoname_id in expand_geoname_id(gn_span.geoname.geonameid)
+                    for gold_span_id in gold_span_ids)
+            else:
+                match_found = any(
+                    has_containment_relationship(
+                        geonames_by_id.get(gn_span.geoname.geonameid),
+                        geonames_by_id.get(gold_span_id))
+                    for gold_span_id in gold_span_ids)
+            if not match_found:
+                if debug or gold_file.endswith('manual_annotations.md'):
                     print("FPos:", gn_span.text, gn_span.metadata['geoname'].geonameid, gn_span.metadata['geoname'].name)
                 fps += 1
         print("\n")

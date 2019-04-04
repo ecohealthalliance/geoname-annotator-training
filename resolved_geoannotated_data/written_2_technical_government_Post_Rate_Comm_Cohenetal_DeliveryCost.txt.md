@@ -181,7 +181,7 @@ an increase in postal density would require a reduction in the
 quality of service that may not be compatible with the way
 universal service obligations are defined in a country.9
 
-3.1 Comparison of French and <ignore  id='undefined'>U.S.</ignore> Postal Densities
+3.1 Comparison of French and U.S. Postal Densities
 Table 2 compares French and <ignore  id='undefined'>U.S.</ignore> postal densities at various
 quantiles. The French postal density is higher at every quantile,
 but the ratio is strikingly high at the 95th and 90th quantiles
@@ -211,7 +211,7 @@ universal service obligation in <geo  id='3017382'>France</geo>, is primarily de
 history and tradition. Thus, delivery quality (and
 therefore postal density) can in theory be tuned by the operator
 but in practice may be constrained by law.
-10 Part of the reason that the <ignore  id='undefined'>U.S.</ignore> postal densities have such
+10 Part of the reason that the U.S. postal densities have such
 low values with a narrow range may be due to stale data.
 The USPS determines the amount of current carrier time based on
 the percentages of time spent in route and load

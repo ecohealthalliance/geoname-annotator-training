@@ -60,7 +60,7 @@ owners, sending each English-only notices.
 There weren&#x27;t enough Spanish-speaking voters to warrant
 bilingual notices, Martin explained in May.
 But that move left Spanish speakers and renters angry. As a
-result, Chris Schneider, executive director of Central <ignore  id='undefined'>California</ignore>
+result, Chris Schneider, executive director of Central California
 Legal Services, is building a lawsuit against Alpaugh
 Irrigation.
 The district &quot;should have sent notices to renters in addition to

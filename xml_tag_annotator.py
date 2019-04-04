@@ -7,10 +7,7 @@ from lazy import lazy
 class XMLTagSpan(AnnoSpan):
 
     def __init__(self, start, end, doc, label, element):
-        self.start = start
-        self.end = end
-        self.doc = doc
-        self.label = label
+        AnnoSpan.__init__(self, start, end, doc, label)
         self.element = element
 
     @lazy

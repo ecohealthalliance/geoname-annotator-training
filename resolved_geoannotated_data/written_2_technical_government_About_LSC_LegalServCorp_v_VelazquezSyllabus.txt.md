@@ -11,10 +11,10 @@ reviewed: true
 title: '[written_2/technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt]  SUPREME
   COURT OF THE UNITED STATES Syllabus LEGAL SERVICES'
 ---
-SUPREME COURT OF THE <ignore  id='undefined'>UNITED STATES</ignore>
+SUPREME COURT OF THE UNITED STATES
 Syllabus
 LEGAL SERVICES CORPORATION v. VELAZQUEZ ET AL.
-CERTIORARI TO THE <ignore  id='undefined'>UNITED STATES</ignore> COURT OF APPEALS FOR THE SECOND
+CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SECOND
 CIRCUIT
 No. 99-603. Argued October 4, 2000- Decided February 28,
 2001*
@@ -43,7 +43,7 @@ supports the restriction here. However, the Court has since
 explained that the Rust counseling activities amounted to
 governmental speech, sustaining view
 ------
-* Together with No. 99-960, <ignore  id='undefined'>United States</ignore> v. Velazquez et al.,
+* Together with No. 99-960, United States v. Velazquez et al.,
 also on certiorari to the same court.
 LEGAL SERVICES CORPORATION v. VELAZQUEZ
 Syllabus

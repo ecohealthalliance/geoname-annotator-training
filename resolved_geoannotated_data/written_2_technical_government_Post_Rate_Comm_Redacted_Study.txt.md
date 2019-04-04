@@ -276,7 +276,7 @@ relationship between <geo  id='6252001'>U.S.</geo> outbound cards and the total 
 outbound Air LC/AO mail applies to inbound mail Air LC/AO. The
 reasonableness of the assumption is unknown.
 The Selection of <ignore  id='undefined'>U.S.</ignore> PostalService Domestic Rates. Based on
-field observations and some discussions with <ignore  id='undefined'>U.S.</ignore> Postal Service
+field observations and some discussions with U.S. Postal Service
 field personnel, the Commission determined that no inbound mail
 would be likely to meet the eligibility requirements for domestic
 bulk business rates. Thus any inbound mail piece would pay the

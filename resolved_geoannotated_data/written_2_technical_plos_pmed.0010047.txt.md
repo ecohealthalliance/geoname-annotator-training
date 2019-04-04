@@ -45,7 +45,7 @@ response to the TRAP antigen T9/96, measured one week after the third vaccinatio
 times higher in the DNA/MVA vaccine group than in the rabies vaccine group.
 “It is absolutely crucial that results like these are published, since the failures, as
 well as the successes, need to be documented if we are to move towards rational strategies
-for optimizing malaria vaccines,” says Tom Smith from the <ignore  id='undefined'>Swiss</ignore> Tropical Institute, who was
+for optimizing malaria vaccines,” says Tom Smith from the Swiss Tropical Institute, who was
 not involved in the study. “At the same time, it makes sense to move on quickly without
 shedding too many tears, in a field that is moving much faster than it was before the
 recent injections of money from the Gates Foundation, but where it is still impossible to
