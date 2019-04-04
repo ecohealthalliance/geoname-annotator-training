@@ -15,7 +15,7 @@ Legal Aid looks to legislators for help
 
 By Robyn L. Minor
 Sunday, January 26, 2003
-Still stinging from federal grant cuts, <ignore  id='undefined'>Kentucky</ignore> Legal Aid&#x27;s
+Still stinging from federal grant cuts, Kentucky Legal Aid&#x27;s
 director is hoping the General Assembly will help heal the
 wounds.
 &quot;We found a sponsor for legislation,&quot; Director Scott Crocker
@@ -31,7 +31,7 @@ provides money to legal aid services such as <geo  id='4285268'>Bowling Green</g
 <ignore  id='undefined'>Kentucky</ignore> Legal Aid. That office provides legal aid in non-criminal
 cases to low-income, elderly or disabled residents in 35
 counties.
-The <ignore  id='undefined'>Kentucky</ignore> Bar Association is supporting the legislation.
+The Kentucky Bar Association is supporting the legislation.
 &quot;They felt the additional filing fee would not prevent people
 from being able to file lawsuits,&quot; Crocker said.
 In fact, the additional fees will ensure wider access to the
@@ -44,7 +44,7 @@ of state budget,&quot; Geveden said.
 Statewide, legal aid budgets were cut $1.58 million. The
 proposed legislation is expected to generate about $1.5
 million.
-Because of about $300,000 in cuts, <ignore  id='undefined'>Kentucky</ignore> Legal Aid in <geo  id='4285268'>Bowling
+Because of about $300,000 in cuts, Kentucky Legal Aid in <geo  id='4285268'>Bowling
 Green</geo> is in the process of closing its <geo  id='4295251'>Hopkinsville</geo> office and
 already has closed and consolidated others.
 A total of six full-time positions and one part-time position,
@@ -54,7 +54,7 @@ If legislation passes and more funding comes in, cuts in
 services would be re-evaluated.
 The Access to Justice money is distributed to legal aid agencies
 based on a poverty population formula. About 21 percent of the fees
-would come to this <ignore  id='undefined'>Kentucky</ignore> Legal Aid office, Crocker said.
+would come to this Kentucky Legal Aid office, Crocker said.
 &quot;We have bipartisan support on this issue and it isn&#x27;t a tax
 increase,&quot; he said. &quot;... There is no one actively lobbying against
 it, so we hope it would pass.&quot;

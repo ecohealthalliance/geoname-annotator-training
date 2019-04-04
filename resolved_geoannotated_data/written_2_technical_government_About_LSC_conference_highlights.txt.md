@@ -58,17 +58,17 @@ assistance from OPP staff, prepared and coordinated the agenda);
 and assistants Wendy Burnette and Lynn Wilson, who were responsible
 for conference logistics, registration, and on-site conference
 assistance.
-<ignore  id='undefined'>Indiana</ignore> Legal Services (ILS) Executive Director Norman Metzger
-and Colleen Cotter, Director of the ILS <ignore  id='undefined'>Indiana</ignore> Justice Center,
-were marvelous hosts. The General Counsel to <ignore  id='undefined'>Indiana</ignore>&#x27;s Chief
+Indiana Legal Services (ILS) Executive Director Norman Metzger
+and Colleen Cotter, Director of the ILS Indiana Justice Center,
+were marvelous hosts. The General Counsel to Indiana&#x27;s Chief
 Justice attended Mauricio Vivero&#x27;s presentation on Public Relations
 and Friday&#x27;s lunch. The Chief Justice also testified to the <geo  id='4921868'>Indiana</geo>
 judiciary&#x27;s keen interest in and support for <geo  id='4921868'>Indiana</geo> Legal Services
 and the provision of pro bono by the private bar. On Friday
 evening, conference participants were joined by the ILS Board,
 judges, and bar leaders (including the new executive director of
-the <ignore  id='undefined'>Indiana</ignore> Bar Foundation) for dinner. The President-Elect of the
-<ignore  id='undefined'>Indiana</ignore> State Bar spoke eloquently and at length about her support
+the Indiana Bar Foundation) for dinner. The President-Elect of the
+Indiana State Bar spoke eloquently and at length about her support
 for legal services and pro bono.
 
 
@@ -196,7 +196,7 @@ state planning concept, entitled, &quot;Breaking the Concept into Parts
 
 
 Session IV -Client Centered
-This discussion was co-facilitated by Colleen Cotter (<ignore  id='undefined'>Indiana</ignore>
+This discussion was co-facilitated by Colleen Cotter (Indiana
 Legal Services) and Robert Gross (LSC) and focused on the
 challenges of creating a service delivery model that is
 client-centered through client leadership in the state planning
@@ -237,7 +237,7 @@ Saturday, February 9, 2002
 VIII -Technology
 Rhonda Lipkin (<geo  id='4361885'>Maryland</geo>), Victor Geminiani (<geo  id='5855797'>Hawaii</geo>), Nan Heald
 (<geo  id='4971068'>Maine</geo>) and Mike Genz (LSC) presented this session.
-1) <ignore  id='undefined'>Maryland</ignore> Legal Assistance Network (MLAN) - Rhonda Lipkin
+1) Maryland Legal Assistance Network (MLAN) - Rhonda Lipkin
 provided a demonstration of www.peoples-law.org and
 www.Mdjustice.org, which is designed to be a virtual library.
 2) <geo  id='5855797'>Hawaii</geo> -Victor Geminiani demonstrated how video conferencing

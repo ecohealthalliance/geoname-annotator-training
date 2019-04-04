@@ -26,7 +26,7 @@ MANAGEMENT AND ADMINISTRATION
 OFFICE OF INSPECTOR GENERAL
 Douglas S. Eakeley, Chair LaVeeda Morgan Battle, Vice Chair
 Hulett H. Askew John T. Broderick, Jr. John N. Erlenborn Edna
-<ignore  id='undefined'>Fairbanks</ignore>-Williams
+Fairbanks-Williams
 F. Wm. McCalpinMaria Luisa Mercado Nancy H. Rogers Thomas F.
 Smegal, Jr. Ernestine P. Watlington
 John N. Erlenborn, President Victor M. Fortuno, Vice President
@@ -113,7 +113,7 @@ Fiscal Year
 II. LSC CONVENES RECONFIGURATION TASK FORCE
 This document, the LSC Special Report to Congress - State
 Planning and Reconfiguration, was prepared in response to a request
-made by the <ignore  id='undefined'>U.S.</ignore> House of Representatives during the FY2002
+made by the U.S. House of Representatives during the FY2002
 Appropriations process, in which the House Appropriations
 Subcommittee on Commerce, Justice, State, and the Judiciary
 stated:
@@ -153,7 +153,7 @@ of Service Areas. The Task Force was charged with reviewing
 planning and for defining service areas; and any revisions to
 existing policies, standards, and procedures which the Task Force
 concludes to warrant serious consideration by LSC.&quot;14
-Co-chaired by two LSC Board members, <ignore  id='undefined'>New Hampshire</ignore> Supreme Court
+Co-chaired by two LSC Board members, New Hampshire Supreme Court
 Justice John T. Broderick and Ernestine Watlington, the Task Force
 convened the first of several meetings on August 21, 2001, in
 <geo  id='4140963'>Washington, D.C.</geo> Representing the Task Force were Hulett H. Askew
@@ -161,7 +161,7 @@ and Maria Luisa Mercado of the LSC Board; James Head of the
 National Legal Aid &amp; Defender Association; Melville
 D. Miller, Jr., of Legal Services of <geo  id='5101760'>New Jersey</geo>; Jonathan Ross
 ofthe American Bar Association&#x27;s Standing Committee on Legal Aid
-and Indigent Defendants; Faith Rivers of the <ignore  id='undefined'>South Carolina</ignore> Bar
+and Indigent Defendants; Faith Rivers of the South Carolina Bar
 Association; and Jeanne Charn, director of Clinical Legal Education
 at Harvard Law School.
 Justice Broderick delivered an interim report from the Task

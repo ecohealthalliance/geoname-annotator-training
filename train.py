@@ -19,7 +19,7 @@ from epitator.get_database_connection import get_database_connection
 from xml_tag_annotator import XMLTagAnnotator
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_validate
-from expand_geonames import expand_geoname_id
+from expand_geonames import expand_geoname_id, EXPAND_GEONAMES
 from utils import combine_geotags
 
 logging.getLogger('annotator.geoname_annotator').setLevel(logging.ERROR)
@@ -30,8 +30,6 @@ geoname_annotator = GeonameAnnotator()
 
 HIGH_CONFIDENCE_THRESHOLD = 0.5
 GEONAME_SCORE_THRESHOLD = 0.13
-
-EXPAND_GEONAMES = False
 
 def train_classifier(annotated_articles, prior_classifier=None):
     """

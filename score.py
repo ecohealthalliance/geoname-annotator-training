@@ -9,7 +9,7 @@ from epitator.geoname_annotator import GeonameAnnotator, location_contains, Geon
 from epitator.get_database_connection import get_database_connection
 from xml_tag_annotator import XMLTagAnnotator
 import geoname_classifier
-from expand_geonames import expand_geoname_id
+from expand_geonames import expand_geoname_id, EXPAND_GEONAMES
 from utils import combine_geotags
 
 
@@ -52,8 +52,9 @@ def score_LocationExtraction():
         geoname_ids = set([span.label for span in tags
                        if span.tag_name != 'ignore'])
         geoname_ids |= set([span.geoname.geonameid for span in doc.tiers['geonames']])
-        for geoname_id in list(geoname_ids):
-            geoname_ids.update(expand_geoname_id(geoname_id))
+        if EXPAND_GEONAMES:
+            for geoname_id in list(geoname_ids):
+                geoname_ids.update(expand_geoname_id(geoname_id))
         geoname_results = cursor.execute('''
         SELECT *
         FROM geonames
@@ -70,7 +71,11 @@ def score_LocationExtraction():
         for gold_span, gn_spans in spans_in_gold:
             if gold_span.tag_name == 'ignore':
                 continue
-            if any(expand_geoname_id(gold_span.label) & expand_geoname_id(gn_span.geoname['geonameid']) for gn_span in gn_spans):
+            if EXPAND_GEONAMES:
+                match_found = any(expand_geoname_id(gold_span.label) & expand_geoname_id(gn_span.geoname['geonameid']) for gn_span in gn_spans)
+            else:
+                match_found = any(gold_span.label == gn_span.geoname['geonameid'] for gn_span in gn_spans)
+            if match_found:
                 tps += 1
             else:
                 if debug or gold_file.endswith('manual_annotations.md'):
@@ -85,11 +90,24 @@ def score_LocationExtraction():
                 continue
             gold_span_ids = set()
             for gold_span in gold_spans:
-                gold_span_ids.update(expand_geoname_id(gold_span.label))
-            if not any(has_containment_relationship(geonames_by_id.get(geoname_id),
-                                                    geonames_by_id.get(gold_span_id))
-                       for geoname_id in expand_geoname_id(gn_span.geoname.geonameid)
-                       for gold_span_id in gold_span_ids):
+                if EXPAND_GEONAMES:
+                    gold_span_ids.update(expand_geoname_id(gold_span.label))
+                else:
+                    gold_span_ids.add(gold_span.label)
+            if EXPAND_GEONAMES:
+                match_found = any(
+                    has_containment_relationship(
+                        geonames_by_id.get(geoname_id),
+                        geonames_by_id.get(gold_span_id))
+                    for geoname_id in expand_geoname_id(gn_span.geoname.geonameid)
+                    for gold_span_id in gold_span_ids)
+            else:
+                match_found = any(
+                    has_containment_relationship(
+                        geonames_by_id.get(gn_span.geoname.geonameid),
+                        geonames_by_id.get(gold_span_id))
+                    for gold_span_id in gold_span_ids)
+            if not match_found:
                 if debug or gold_file.endswith('manual_annotations.md'):
                     print("FPos:", gn_span.text, gn_span.metadata['geoname'].geonameid, gn_span.metadata['geoname'].name)
                 fps += 1

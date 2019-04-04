@@ -23,7 +23,7 @@ Students leaving law schools earn annual salaries as low as
 $25,000 working for government public-service organizations, while
 those who land jobs with top-ranked law firms make $80,000 a year
 or more.
-Some graduates who take jobs with <ignore  id='undefined'>Colorado</ignore> Legal Services, which
+Some graduates who take jobs with Colorado Legal Services, which
 handles housing and other civil disputes for the poor, pay up to
 $800 a month on student loans, said Jonathan Asher, executive
 director. The agency pays newly graduated lawyers $31,736 a year in
@@ -40,7 +40,7 @@ pressure of student loans eliminates their options and choices,&#x27;
 Asher said.
 Sixty-six percent of law students surveyed nationally in 2002
 said that debt kept them from considering a job with groups like
-<ignore  id='undefined'>Colorado</ignore> Legal Services, said a study by the National Association
+Colorado Legal Services, said a study by the National Association
 for Law Placement. And 68 percent of public-interest employers
 reported difficulty in recruiting attorneys.
 In 2001, median private law school tuition was about $23,000 a
@@ -53,7 +53,7 @@ of Denver</geo> law student. &#x27;It&#x27;s kind of a joke among a lot of us wh
 want to do public interest law. We say, &#x27;Yeah, this is what I want
 to do, but I may have to work in a private firm and be a drone for
 a while.&quot;
-Jennifer Knight, a lawyer with <ignore  id='undefined'>Colorado</ignore> Legal Services who
+Jennifer Knight, a lawyer with Colorado Legal Services who
 handles housing and other civil cases for the poor, is paying off
 roughly $80,000 in loans. And she received a scholarship that paid
 half her tuition at <geo  id='4945866'>Northeastern University</geo>&#x27;s law school in
@@ -72,7 +72,7 @@ years.
 By comparison, tuition at the <geo  id='5583011'>University of Colorado</geo> Law School
 at <geo  id='5574991'>Boulder</geo> is much lower for state residents - $6,754 a year. Out-
 of-state residents pay $21,252.
-So far, Asher said, <ignore  id='undefined'>Colorado</ignore> Legal Services has been able to
+So far, Asher said, Colorado Legal Services has been able to
 attract the talent it needs.
 The state Public Defender&#x27;s office - where new lawyers make
 $43,536 a year - also continues to attract good candidates, said

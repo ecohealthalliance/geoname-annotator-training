@@ -24,7 +24,7 @@ JOHN EIDLEMAN, Program Specialist for the Legal Services
 Corporation; LEGAL SERVICES CORPORATION; JOHN MCKAY, President of
 the Legal Services Corporation,
 Defendants-Appellees. �
-Appeal from the <ignore  id='undefined'>United States</ignore> District Court for the Western
+Appeal from the United States District Court for the Western
 District of <geo  id='6254928'>Virginia</geo>, at <geo  id='4747554'>Big Stone Gap</geo>. James P. Jones, District
 Judge. (CA-00-33-2)
 Argued: February 28, 2001

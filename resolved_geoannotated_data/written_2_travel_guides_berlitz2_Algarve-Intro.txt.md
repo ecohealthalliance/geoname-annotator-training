@@ -35,7 +35,7 @@ A visit to the local fish market is a revealing window into Algarvian life. Nego
 Not a large area, the <geo  id='2271989'>Algarve</geo> is relatively easy to get around, whether by train or car (an effort that is much more relaxing outside of the main summer season). The distances between mega-resorts and unspoiled villages are surprisingly small.
 Besides beaches, the <geo  id='2271989'>Algarve</geo>’s major attractions are towns that lived through centuries of adventure, triumph, and disaster. <geo  id='2268339'>Faro</geo>, <geo  id='2262744'>Tavira</geo>, and <geo  id='2267226'>Lagos</geo> are towns with a strong Moorish influence, and quiet mountain towns like <geo  id='2262926'>Silves</geo>, <geo  id='9260374'>Alte</geo>, and <geo  id='2263611'>Salir</geo> are reminders of the days before golf courses and hotel chains.
 Despite the region’s ancient roots, few historic monuments survive from before 1755, when the <geo  id='2271989'>Algarve</geo> was rocked by a monumental earthquake that took thousands of lives and leveled buildings as far north as <geo  id='2267057'>Lisbon</geo>. Still, you’ll find vestiges of a vibrant past, including evocative castle ruins and churches with extraordinary displays of Portuguese glazed tiles. Even the humblest village has a classic white church, a sleepy plaza shaded by vivid purple jacaranda, and, if you time it right, the drama of the local market.
-<ignore  id='undefined'>The Portuguese are famously hospitable, if reserved. And they remain tolerant and helpful, even though they know that their lovely coast is no</ignore> longer just theirs.
+The Portuguese are famously hospitable, if reserved. And they remain tolerant and helpful, even though they know that their lovely coast is no longer just theirs.
 
 
 

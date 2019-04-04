@@ -45,7 +45,7 @@ least as few as possible.
 brutal and you&#x27;re almost guaranteed to struggle for a couple of
 years before there&#x27;s a light at the end of the tunnel,&quot; said Fred
 Rooney, director of the Community Legal Resource Network at City
-University of <ignore  id='undefined'>New York</ignore> School of Law, from which the lawyers of the
+University of New York School of Law, from which the lawyers of the
 newly formed Cates, Katalinic &amp; Lund graduated last May. &quot;But
 if our graduates don&#x27;t do it, the millions of people who cannot
 access justice in this country will continue to soar.&quot;

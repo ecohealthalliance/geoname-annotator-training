@@ -1142,7 +1142,7 @@ emergency setting.
 References
 1. <ignore  id='undefined'>U.S.</ignore> <ignore  id='undefined'>Department of Health and Human Services</ignore>. Healthy People
 2000. National promotion and disease prevention objectives.
-<geo  id='4140963'>Washington (DC</geo>): <ignore  id='undefined'>U.S.</ignore> <ignore  id='undefined'>Department of Health and Human Services</ignore>;
+<geo  id='4140963'>Washington (DC</geo>): U.S. <ignore  id='undefined'>Department of Health and Human Services</ignore>;
 1990. DHHS Publication No. (PHS) 91-50212.
 2. <ignore  id='undefined'>U.S.</ignore> <ignore  id='undefined'>Department of Health and Human Services</ignore>. Healthy People
 2010: Understanding and Improving Health. 2nd ed. <geo  id='4140963'>Washington (DC</geo>):

@@ -617,7 +617,7 @@ acid solvent accessibility [ 47].
 JEvTrace implementation
 The program takes as input an MSA, or an MSA with a
 corresponding phylogenetic tree. The PILEUP (GCG),
-CLUSTALW [ 39] and <ignore  id='undefined'>New Hampshire</ignore> [ 48] formats are
+CLUSTALW [ 39] and New Hampshire [ 48] formats are
 recognized. Phylogeny is interpreted as a binary tree
 with a hypothetical root. Protein structure viewing is
 designated to the JAVA structure viewer WebMol [ 35].

@@ -27,7 +27,7 @@ RESIDENTIAL DELIVERY MARKET
 Robert H. Cohen William W. Ferguson John D. Waller Spyros S.
 Xenakis
 Office of Rates, Analysis and Planning
-<ignore  id='undefined'>U.S.</ignore> Postal Rate Commission
+U.S. Postal Rate Commission
 October 1998
 Published in Emerging Competition in Postal and Delivery
 Systems, edited by M.A. Crew and
