@@ -18,10 +18,13 @@ def create_resource_file(location, data):
             file.write(data['_content'])
 
 def annotations_to_annie_training_docs():
-    resp = requests.get("http://localhost:3000/api/geoannotatedDocuments",
+    resp = requests.get(os.environ.get(
+        "GEONAME_CURATOR_URL",
+        "https://geoname-curator.eha.io") + "/api/geoannotatedDocuments",
       params={
         "limit": 10000
       })
+    resp.raise_for_status()
     for item in resp.json():
         del item['content']
         del item['enhancements']
