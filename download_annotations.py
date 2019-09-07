@@ -18,22 +18,30 @@ def create_resource_file(location, data):
             file.write(data['_content'])
 
 def annotations_to_annie_training_docs():
-    resp = requests.get(os.environ.get(
-        "GEONAME_CURATOR_URL",
-        "https://geoname-curator.eha.io") + "/api/geoannotatedDocuments",
-      params={
-        "limit": 10000
-      })
-    resp.raise_for_status()
-    for item in resp.json():
-        del item['content']
-        del item['enhancements']
-        item['_content'] = item['annotatedContent']
-        del item['annotatedContent']
-        print(item['_sourceId'])
-        create_resource_file(
-            './resolved_geoannotated_data/' + '_'.join(item['_sourceId'].split('/')) + '.md',
-            item)
+    skip = 0
+    limit = 100
+    while True:
+        resp = requests.get(os.environ.get(
+            "GEONAME_CURATOR_URL",
+            "https://geoname-curator.eha.io") + "/api/geoannotatedDocuments",
+          params={
+            "limit": limit,
+            'skip': skip
+          })
+        resp.raise_for_status()
+        items = list(resp.json())
+        if len(items) == 0:
+            break
+        skip += limit
+        for item in items:
+            del item['content']
+            del item['enhancements']
+            item['_content'] = item['annotatedContent']
+            del item['annotatedContent']
+            print(item['_sourceId'])
+            create_resource_file(
+                './resolved_geoannotated_data/' + '_'.join(item['_sourceId'].split('/')) + '.md',
+                item)
 
 if __name__ == '__main__':
     import argparse

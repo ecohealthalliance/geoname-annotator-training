@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from epitator.annotator import AnnoSpan, AnnoTier
 from bs4 import BeautifulSoup, NavigableString
-from lazy import lazy
 
 
 class XMLTagSpan(AnnoSpan):
@@ -10,11 +9,11 @@ class XMLTagSpan(AnnoSpan):
         AnnoSpan.__init__(self, start, end, doc, label)
         self.element = element
 
-    @lazy
+    @property
     def tag_name(self):
         return self.element.name
 
-    @lazy
+    @property
     def attrs(self):
         return self.element.attrs
 
